@@ -3,13 +3,20 @@
     const totalSteps = 3;
 
     function getApiBaseUrl() {
-      const config = window.SUPABASE_CONFIG || {};
-      if (config.apiBaseUrl) return config.apiBaseUrl;
-      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        return `${window.location.protocol}//${window.location.host}`;
-      }
-      return 'http://localhost:3000';
-    }
+  const config = window.SUPABASE_CONFIG || {};
+
+  if (config.apiBaseUrl) {
+    return config.apiBaseUrl;
+  }
+
+  if (window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1') {
+    return `${window.location.protocol}//${window.location.host}`;
+  }
+
+  // Production: use the same Vercel domain
+  return window.location.origin;
+}
 
     async function submitToBackend(tableName, payload) {
       const config = window.SUPABASE_CONFIG || {};
