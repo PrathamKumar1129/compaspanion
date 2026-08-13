@@ -1,0 +1,15 @@
+{
+  "name": "compasspanion",
+  "version": "1.0.0",
+  "description": "Local backend for Compasspanion booking and newsletter storage",
+  "scripts": {
+    "start": "node server/app.js --open",
+    "dev": "node --watch server/app.js",
+    "db:migrate": "node server/scripts/migrate.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "pg": "^8.22.0",
+    "pino": "^10.3.1"
+  }
+}

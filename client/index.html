@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compasspanion – Travel Beyond Boundaries</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <img src="images/preloader(2).gif" alt="Loading…" />
+    <p>Planning your adventure…</p>
+  </div>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- CURSOR GLOW (desktop only, purely decorative) -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ITINERARY MODAL -->
+  <div class="itin-overlay" id="itinOverlay">
+    <div class="itin-modal">
+      <button class="itin-close" onclick="closeItinerary()" aria-label="Close">&times;</button>
+      <div class="itin-hero" id="itinHero">
+        <div class="itin-hero-overlay"></div>
+        <div class="itin-hero-content">
+          <span class="itin-hero-tag" id="itinTag">✦ Destination</span>
+          <h2 id="itinTitle">Trip Title</h2>
+          <p id="itinSubtitle">Trip subtitle</p>
+        </div>
+      </div>
+      <div class="itin-body">
+        <div class="itin-meta" id="itinMeta"></div>
+        <div class="itin-days" id="itinDayTabs"></div>
+        <div class="itin-stops" id="itinStops"></div>
+        <div class="itin-gallery" id="itinGallery"></div>
+        <div class="itin-cta">
+          <a href="#booking" class="btn-primary" onclick="closeItinerary()">Plan This Trip →</a>
+          <span class="itin-cta-note">Free cancellation up to 7 days before departure</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="mainNav">
+    <a class="nav-logo" href="#"><img src="images/logo.png" alt="Compasspanion" /></a>
+    <ul class="nav-links">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#booking">Plan Trip</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#booking" class="nav-cta">Book Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#destinations" onclick="toggleMenu()">Destinations</a>
+    <a href="#why-us" onclick="toggleMenu()">Why Us</a>
+    <a href="#booking" onclick="toggleMenu()">Plan Trip</a>
+    <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+    <a href="#booking" class="btn-primary" style="text-align:center" onclick="toggleMenu()">Book Now</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-slides" id="heroSlides">
+      <div class="hero-slide active" style="background-image:url('images/nubra.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/leh.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/spiti.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/manali.jpg')"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Travel Beyond Boundaries ✦</p>
+      <h1 class="hero-title">Your journey<br/>starts with a<br/><em>single step</em></h1>
+      <p class="hero-subtitle">Discover handcrafted itineraries, immersive experiences, and memories that last a lifetime.</p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn-primary">Plan My Trip</a>
+        <a href="#destinations" class="btn-outline">Explore Destinations</a>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <div class="hero-badge reveal">
+      <div class="hero-badge-stars">★★★★★</div>
+      <div class="hero-badge-text"><strong>4.9/5</strong> rated by 100+ explorers</div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-num">100+</div>
+      <div class="stat-label">Happy Travellers</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Destinations</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">98%</div>
+      <div class="stat-label">Satisfaction Rate</div>
+    </div>
+  </div>
+
+  <!-- DESTINATIONS -->
+  <section class="destinations" id="destinations">
+    <div class="destinations-sun" aria-hidden="true"></div>
+    <div class="destinations-clouds" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="destinations-contours" aria-hidden="true"></div>
+    <div class="section-header reveal">
+      <p class="section-eyebrow">✦ Explore India</p>
+      <h2 class="section-title">Handpicked Destinations</h2>
+      <p class="section-desc">From the snow-kissed peaks of Ladakh to the serene valleys of Himachal ? every destination tells a story waiting for you to live it. Tap a card to see the full day-by-day itinerary.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card large reveal tilt-card" style="animation-delay:0.1s" onclick="openItinerary('nubra')">
+        <img src="images/zanskar-peak.jpg" alt="Zanskar, Ladakh" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag"> Ladakh</span>
+          <div class="dest-name"> Zanskar</div>
+          <div class="dest-price">From <strong>₹34,999</strong> / person · 8 Days/ 7 nights</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+      <div class="dest-card reveal tilt-card" style="animation-delay:0.15s" onclick="openItinerary('manali')">
+        <img src="images/chitkul1.jpg" alt="Manali, Himachal Pradesh" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag">Himachal</span>
+          <div class="dest-name">Sangla / Chitkul</div>
+          <div class="dest-price">From <strong>₹11,999</strong> / person · 4 Days / 3 Nights</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+      <div class="dest-card reveal tilt-card" style="animation-delay:0.2s" onclick="openItinerary('spiti')">
+        <img src="images/spiti.jpg" alt="Spiti Valley" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag">Spiti Valley</span>
+          <div class="dest-name">Pin Valley</div>
+          <div class="dest-price">From <strong>₹18,999</strong> / person · 7 Days / 6 Nights</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+      <h3 class="section-title" style="grid-column:1/-1; margin-top:2rem;">Short Trips</h3>
+      <div class="dest-card reveal tilt-card" style="animation-delay:0.25s" onclick="openItinerary('leh')">
+        <img src="images/pabbar.jpg" alt="Sangam Point, Leh" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag">Himachal</span>
+          <div class="dest-name">pabbar valley</div>
+          <div class="dest-price">From <strong>₹7,999</strong> / person · 3 Days / 2 Nights</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+      <div class="dest-card reveal tilt-card" style="animation-delay:0.3s" onclick="openItinerary('rishikesh')">
+        <img src="images/kalpa (6).jpg" alt="Rishikesh, Uttarakhand" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag">Himachal</span>
+          <div class="dest-name">Kalpa - Kinnaur</div>
+          <div class="dest-price">From <strong>₹8,499</strong> / person · 4 Days / 3 Nights</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+      <div class="dest-card reveal tilt-card" style="animation-delay:0.35s" onclick="openItinerary('mussoorie')">
+        <img src="images/mussoorie-town.jpg" alt="Mussoorie, Queen of Hills" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag">Queen of Hills</span>
+          <div class="dest-name">Mussoorie</div>
+          <div class="dest-price">From <strong>₹11,000</strong> / person · 4 Days</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+      <div class="dest-card reveal tilt-card" style="animation-delay:0.4s" onclick="openItinerary('zanskar')">
+        <img src="images/churah.jpg" alt="Zanskar Range Trek" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag">Himachal</span>
+          <div class="dest-name">Churah valley</div>
+          <div class="dest-price">From <strong>₹7,000</strong> / person · 3 Days / 2 Nights</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+      <div class="dest-card reveal tilt-card" style="animation-delay:0.45s" onclick="openItinerary('squad')">
+        <img src="images/rajgundha.webp" alt="Group Travel" loading="lazy" />
+        <div class="dest-card-overlay">
+          <span class="dest-tag"> Trekking expedition</span>
+          <div class="dest-name">Rajgundha escape</div>
+          <div class="dest-price"> ₹7,999· 3 Days / 2 Nights</div>
+          <span class="dest-explore">Explore Itinerary →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO / DESTINATIONS MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Ladakh</span><span>✦</span><span>Manali</span><span>✦</span><span>Spiti Valley</span><span>✦</span>
+      <span>Rishikesh</span><span>✦</span><span>Mussoorie</span><span>✦</span><span>Zanskar</span><span>✦</span>
+      <span>Ladakh</span><span>✦</span><span>Manali</span><span>✦</span><span>Spiti Valley</span><span>✦</span>
+      <span>Rishikesh</span><span>✦</span><span>Mussoorie</span><span>✦</span><span>Zanskar</span><span>✦</span>
+     
+    </div>
+  </div>
+
+  <!-- GALLERY STRIP -->
+  <div class="gallery-strip" aria-label="Photo gallery">
+    <img src="images/friends.jpg" alt="Group adventure" loading="lazy" class="reveal" />
+    <img src="images/nubra.jpg" alt="Nubra Valley reflection" loading="lazy" class="reveal" />
+    <img src="images/rishikesh.jpg" alt="Rishikesh suspension bridge" loading="lazy" class="reveal" />
+    <img src="images/spiti.jpg" alt="Spiti mountain river" loading="lazy" class="reveal" />
+    <img src="images/zanskar-peak.jpg" alt="Zanskar peak" loading="lazy" class="reveal" />
+    <img src="images/mussoorie-church.jpg" alt="Mussoorie church view" loading="lazy" class="reveal" />
+    <img src="images/manali.jpg" alt="Manali snowscape" loading="lazy" class="reveal" />
+  </div>
+
+  <!-- WHY US -->
+  <section class="why-us" id="why-us">
+    <div class="section-header reveal">
+      <p class="section-eyebrow" style="color:var(--gold)">✦ Why Compasspanion</p>
+      <h2 class="section-title" style="color:var(--white)">Travel with real confidence.</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.65)">We don't just book trips ? we craft journeys that transform you. Here's what sets us apart.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">👨‍✈️</div>
+        <div class="why-title">Personally Planned</div>
+        <p class="why-text">Every journey is built with care for comfort, local discoveries, and the small details that make a trip feel personal.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🛡️</div>
+        <div class="why-title">Clear From the Start</div>
+        <p class="why-text">We help you understand your trip, inclusions, and booking details before you commit — no confusing surprises.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">✨</div>
+        <div class="why-title">Tailored Itineraries</div>
+        <p class="why-text">No two travellers are alike. Every trip is customised to your pace, interests, and budget.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💸</div>
+        <div class="why-title">Comfortable on Your Budget</div>
+        <p class="why-text">Tell us your budget and travel style. We'll help create a plan that feels right for both.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOM TRIP FLOW -->
+  <section class="trip-flow-section">
+    <div class="section-header center reveal">
+      <p class="section-eyebrow">Your trip, your pace</p>
+      <h2 class="section-title">Simple planning. More time for the journey.</h2>
+      <p class="section-desc">Start with the destination, share what matters to you, and we'll shape the rest together.</p>
+    </div>
+    <div class="trip-flow reveal">
+      <article><span>01</span><div class="flow-icon">⌖</div><h3>Choose your place</h3><p>Start with a destination, dates, or simply an idea you can't stop thinking about.</p></article>
+      <article><span>02</span><div class="flow-icon">✦</div><h3>Pick your vibe</h3><p>Adventure, slow travel, culture, a weekend escape — tell us what feels like you.</p></article>
+      <article><span>03</span><div class="flow-icon">⌁</div><h3>Make it yours</h3><p>We'll plan around your group, comfort, budget, and special requests.</p></article>
+      <article><span>04</span><div class="flow-icon">→</div><h3>Travel together</h3><p>Confirm your spot and get ready for the road, the people, and the stories ahead.</p></article>
+    </div>
+  </section>
+
+  <!-- BOOKING QUESTIONNAIRE -->
+  <section class="booking-section" id="booking">
+    <div class="booking-aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="booking-constellation" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="booking-ridge booking-ridge-far" aria-hidden="true"></div>
+    <div class="booking-ridge booking-ridge-near" aria-hidden="true"></div>
+    <div class="booking-orb booking-orb-one" aria-hidden="true"></div>
+    <div class="booking-orb booking-orb-two" aria-hidden="true"></div>
+    <div class="booking-wrapper">
+      <!-- Visual side -->
+      <div class="booking-visual reveal">
+        <img src="images/friends.jpg" alt="Happy travellers" loading="lazy" />
+        <div class="booking-visual-sheen" aria-hidden="true"></div>
+        <div class="booking-floating-card booking-floating-card-top">
+          <span class="floating-card-icon">✦</span>
+          <span><strong>Made around you</strong><small>Every detail, personalised</small></span>
+        </div>
+        <div class="booking-visual-copy">
+          <p>Start your story</p>
+          <h2>Leave the details to us.</h2>
+        </div>
+        <div class="booking-visual-badge">
+          <strong>Clear plans. Personal journeys.</strong>
+          <p>Tell us your dream — we'll turn it into a journey. No hidden costs, no generic packages.</p>
+        </div>
+      </div>
+
+      <!-- Multi-step form -->
+      <div class="booking-form-wrap reveal" id="bookingFormWrap">
+        <div class="booking-form-intro">
+          <div>
+            <p class="booking-kicker">Your next escape</p>
+            <h2>Plan a trip worth talking about.</h2>
+          </div>
+          <span class="booking-time"><span>◷</span> Takes 2 minutes</span>
+        </div>
+        <div class="step-indicators" id="stepIndicators">
+          <div class="step-progress-item active" id="dot-0"><span>01</span><small>Destination</small></div>
+          <div class="step-progress-item" id="dot-1"><span>02</span><small>Your group</small></div>
+          <div class="step-progress-item" id="dot-2"><span>03</span><small>Contact</small></div>
+        </div>
+
+        <!-- STEP 1: Destination -->
+        <div class="form-step active" id="step-0">
+          <p class="step-label">Step 1 of 3</p>
+          <h3 class="step-heading">Where do you want to go?</h3>
+          <div class="dest-chips" id="destChips">
+            <span class="dest-chip" onclick="toggleChip(this)"> 🏔️ Ladakh</span>
+            <span class="dest-chip" onclick="toggleChip(this)"> ❄️ Manali</span>
+            <span class="dest-chip" onclick="toggleChip(this)"> 🏞️ Spiti Valley</span>
+            <span class="dest-chip" onclick="toggleChip(this)"> 🛣️ Rishikesh</span>
+            <span class="dest-chip" onclick="toggleChip(this)"> ⛪ Mussoorie</span>
+            <span class="dest-chip" onclick="toggleChip(this)"> ⛩️Other</span>
+          </div>
+          <div class="form-row single">
+            <div class="form-group">
+              <label>Or type your destination</label>
+              <input type="text" id="customDest" placeholder="e.g. Kedarnath, Coorg…" />
+            </div>
+          </div>
+
+          <div class="form-row single">
+            <div class="form-group">
+              <label>How long is your trip?</label>
+              <div class="dest-chips" id="durationChips">
+                <span class="dest-chip" onclick="toggleChip(this)">🌄 Gateway weekend trip (2–3 Days)</span>
+                <span class="dest-chip" onclick="toggleChip(this)">☀️ Day trip (no overnight stay)</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🎒 Short trip (3–5 days)</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🧳 Long vacation (6+ days)</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🏔️ Expedition (7–15 days)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row single">
+            <div class="form-group">
+              <label>What kind of trip excites you?</label>
+              <div class="dest-chips" id="categoryChips">
+                <span class="dest-chip" onclick="toggleChip(this)">🏕️ Weekend Escape</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🧗 Adventure Expeditions</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🎒 Backpacking Trips</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🔥 Camping & Bonfire Trips</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🗻 Off-beat Himalayan Tours</span>
+                <span class="dest-chip" onclick="toggleChip(this)">👩 Women Only</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🧍 Solo Traveller Group Tour</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🚗 Road Trips</span>
+                <span class="dest-chip" onclick="toggleChip(this)">⛰️ Trekking Expedition</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🏘️ Cultural Village Experiences</span>
+                <span class="dest-chip" onclick="toggleChip(this)">📸 Photography Tours</span>
+                <span class="dest-chip" onclick="toggleChip(this)">🐾 Pet-friendly Trips</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Start Date</label>
+              <input type="date" id="startDate" />
+            </div>
+            <div class="form-group">
+              <label>End Date</label>
+              <input type="date" id="endDate" />
+            </div>
+          </div>
+          <div class="form-nav">
+            <button class="btn-step btn-step-next" onclick="goStep(1)">Next: Group Details →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: Group info -->
+        <div class="form-step" id="step-1">
+          <p class="step-label">Step 2 of 3</p>
+          <h3 class="step-heading">Tell us about your group</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Adults</label>
+              <select id="numAdults">
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of Children</label>
+              <select id="numChildren">
+                <option value="">Select</option>
+                <option>0</option><option>1</option><option>2</option>
+                <option>3</option><option>4+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Budget (per person)</label>
+              <select id="budget">
+                <option value="">Select range</option>
+                <option>Under ₹10,000</option>
+                <option>₹10,000 – ₹25,000</option>
+                <option>₹25,000 – ₹50,000</option>
+                <option>₹50,000 – ₹1,00,000</option>
+                <option>₹1,00,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Trip Type</label>
+              <select id="tripType">
+                <option value="">Select type</option>
+                <option>Adventure / Trekking</option>
+                <option>Leisure / Relaxation</option>
+                <option>Cultural / Heritage</option>
+                <option>Honeymoon / Couple</option>
+                <option>Family Vacation</option>
+                <option>Group / Friends</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row single">
+            <div class="form-group">
+              <label>Any special requirements?</label>
+              <textarea id="specialReq" placeholder="Vegetarian meals, mobility needs, anniversary surprise…"></textarea>
+            </div>
+          </div>
+          <div class="form-nav">
+            <button class="btn-step btn-step-back" onclick="goStep(0)">? Back</button>
+            <button class="btn-step btn-step-next" onclick="goStep(2)">Next: Contact Info →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Contact -->
+        <div class="form-step" id="step-2">
+          <p class="step-label">Step 3 of 3</p>
+          <h3 class="step-heading">How do we reach you?</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="fullName" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" id="emailAddr" placeholder="you@gmail.com" pattern="[^\s@]+@gmail\.com" title="Please enter a Gmail address ending in @gmail.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="phoneNum" placeholder="9876543210" inputmode="numeric" pattern="[0-9]+" maxlength="15" title="Phone number must contain digits only" oninput="this.value = this.value.replace(/\D/g, '')" required />
+            </div>
+            <div class="form-group">
+              <label>Preferred Contact Time</label>
+              <select id="contactTime">
+                <option value="">Any time</option>
+                <option>Morning (9am–12pm)</option>
+                <option>Afternoon (12pm–4pm)</option>
+                <option>Evening (4pm–8pm)</option>
+              </select>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">
+            ?? Your information is safe with us. We never share your data with third parties.
+          </p>
+          <div class="form-nav">
+            <button class="btn-step btn-step-back" onclick="goStep(1)">? Back</button>
+            <button class="btn-step btn-submit" onclick="submitBooking()">✈ Submit Enquiry</button>
+          </div>
+        </div>
+
+        <!-- SUCCESS -->
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">🎉</div>
+          <h3>You're all set, explorer!</h3>
+          <p>We've received your enquiry and our travel experts will reach out within <strong>24 hours</strong>. Get ready to pack your bags!</p>
+          <br/>
+          <a href="#destinations" class="btn-primary" style="display:inline-block;margin-top:0.5rem">Explore More Destinations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPASPANION STORY -->
+  <section class="story-section" id="about">
+    <div class="story-map-lines" aria-hidden="true"></div>
+    <div class="story-layout">
+      <div class="story-copy reveal">
+        <p class="section-eyebrow">The Compaspanion way</p>
+        <h2 class="section-title">More than a trip.<br/><em>A journey with friends.</em></h2>
+        <p>Compaspanion is for people who want to travel differently — with comfort, curiosity, and people who love the journey as much as they do.</p>
+        <p>From mountain roads and hidden cafés to unplanned chai breaks, every trip makes room for the moments that turn strangers into travel friends.</p>
+        <a href="#booking" class="btn-primary">Join the journey <span>→</span></a>
+      </div>
+      <div class="story-moments reveal" aria-label="What makes our trips different">
+        <article><span>01</span><h3>Go beyond the list</h3><p>Local discoveries, slow moments, and experiences worth remembering.</p></article>
+        <article><span>02</span><h3>Come as you are</h3><p>Solo travellers, first-time explorers, and friend groups are all welcome.</p></article>
+        <article><span>03</span><h3>Make it personal</h3><p>Thoughtfully planned trips with comfort, budget, and hidden gems in mind.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="founder-section" id="founder">
+    <div class="founder-halo" aria-hidden="true"></div>
+    <div class="founder-card reveal">
+      <div class="founder-mark">S</div>
+      <div class="founder-copy">
+        <p class="section-eyebrow">Meet Saniya</p>
+        <h2>Founder · Planner · Guide · <em>Travel Friend</em></h2>
+        <blockquote>“I only take you to places I've explored, loved, or genuinely believe are worth experiencing.”</blockquote>
+        <p>Every Compaspanion itinerary is personally planned with attention to comfort, budget, hidden local gems, and the kind of memories that stay long after the journey ends.</p>
+        <a href="https://www.instagram.com/saniyaagainvoid/" target="_blank" rel="noopener noreferrer" class="founder-link">Follow Saniya on Instagram ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELCOME CARDS -->
+  <section class="welcome-section">
+    <div class="section-header center reveal">
+      <p class="section-eyebrow">Everyone has a place here</p>
+      <h2 class="section-title">Bring your curiosity.<br/>We'll bring the company.</h2>
+    </div>
+    <div class="welcome-grid">
+      <article class="welcome-card solo-card reveal"><div class="welcome-icon">✦</div><p class="section-eyebrow">Solo travellers</p><h3>Come alone. Leave with stories — and new travel friends.</h3><p>Most Compaspanion travellers join solo. You never need a group to begin your next adventure.</p></article>
+      <article class="welcome-card pet-card reveal"><div class="welcome-icon">⌁</div><p class="section-eyebrow">Pet-friendly options</p><h3>Some journeys are better with your furry companion.</h3><p>Well-behaved pets are welcome on selected trips. Let us know in advance so we can plan thoughtfully.</p></article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="faq-intro reveal"><p class="section-eyebrow">Helpful details</p><h2 class="section-title">Questions before you pack?</h2><p>Here are the things travellers ask us most. Still wondering about something? <a href="mailto:compaspanion@gmail.com">Talk to us.</a></p></div>
+    <div class="faq-list reveal">
+      <details open><summary>How do I book a trip?<span>+</span></summary><p>Fill out the booking form and pay the required ₹1,000 advance per person to confirm your seat.</p></details>
+      <details><summary>Are solo travellers welcome?<span>+</span></summary><p>Absolutely. Most Compaspanion travellers join trips solo and meet like-minded people along the way.</p></details>
+      <details><summary>Are pets allowed?<span>+</span></summary><p>Yes, on selected pet-friendly trips. Please tell us before booking so appropriate arrangements can be considered.</p></details>
+      <details><summary>Is travel insurance included?<span>+</span></summary><p>No. Travellers are encouraged to arrange their own travel insurance.</p></details>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header center reveal">
+      <p class="section-eyebrow">✦ Traveller Stories</p>
+      <h2 class="section-title">What Our Explorers Say</h2>
+      <p class="section-desc">Real words from real adventurers who let Compasspanion be their guide.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="quote-mark">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Felt more like travelling with friends than joining a tour.”
+
+I was honestly a little nervous about travelling with people I didn't know, but the whole experience felt so comfortable. The planning was smooth, everyone was friendly, and there was never that typical rushed-tour feeling. The random chai stops and late-night conversations were honestly some of my favourite parts!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div>
+            <div class="testi-name">Pratham Chauhan</div>
+            <div class="testi-trip">Ladakh Expedition, 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="quote-mark">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">I came solo and left with some amazing memories.”
+
+I had been waiting for my friends to make travel plans, and finally decided to just go on my own. I'm so glad I did. Compaspanion made it really easy to feel included, and I met some genuinely amazing people along the way. Definitely one of those trips I'll remember for a long time. 9/10 recommend!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PS</div>
+          <div>
+            <div class="testi-name">Shailvi </div>
+            <div class="testi-trip">Spiti 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="quote-mark">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text"> What I loved most was that everything didn't feel overly scheduled. There was enough planning to make the trip comfortable, but also enough freedom to actually enjoy the place. The conversations, music, local food stops and just sitting around at night ended up being some of my favourite memories..</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <div class="testi-name">Palak Jain</div>
+            <div class="testi-trip">Spiti Group Tour, 2025</div>
+          </div>
+        </div>
+      </div>
+       <div class="testi-card reveal">
+        <div class="quote-mark">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text"> Sometimes you just need to get away from your routine and go somewhere new. This trip gave me exactly that. Beautiful places, good conversations, spontaneous plans and a really nice group of people. Came back with a completely refreshed mind.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <div class="testi-name">Ragansh</div>
+            <div class="testi-trip">Zanskar expedition 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter">
+    <h2>Get Inspired ? Straight to Your Inbox</h2>
+    <p>Travel deals, destination guides, and hidden gems. No spam, just wanderlust.</p>
+    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+      <input type="email" placeholder="you@gmail.com" pattern="[^\s@]+@gmail\.com" title="Please enter a Gmail address ending in @gmail.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Compasspanion" />
+        <p class="footer-tagline">Travel beyond boundaries. We craft journeys that connect you with the world's most remarkable places and people.</p>
+        <div class="footer-socials">
+          <a class="social-link instagram" href="https://www.instagram.com/compaspanion/" target="_blank" rel="noopener noreferrer" aria-label="Follow Compasspanion on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="17.5" cy="6.7" r="1"/></svg></a>
+
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#">Ladakh</a></li>
+          <li><a href="#">Manali</a></li>
+          <li><a href="#">Spiti Valley</a></li>
+          <li><a href="#">Kashmir</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#founder">Meet the Founder</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+917982398978">+91 79823 98978</a></li>
+          <li><a href="mailto:compaspanion@gmail.com">compaspanion@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/compaspanion/" target="_blank" rel="noopener noreferrer">@compaspanion</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="policies.html#cancellation">Cancellation Policy</a></li>
+          <li><a href="policies.html#privacy">Privacy Policy</a></li>
+          <li><a href="policies.html#terms">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>? 2025 Compasspanion. All rights reserved. Travel beyond boundaries.</span>
+      <span>Made with for every explorer</span>
+    </div>
+  </footer>
+
+  <script src="src/supabase-config.js"></script>
+  <script src="src/itinerary-data.js"></script>
+  <script src="src/booking.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

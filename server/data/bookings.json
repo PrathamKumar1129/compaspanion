@@ -1,0 +1,19 @@
+[
+  {
+    "id": "booking-1786036913389",
+    "timestamp": "2026-08-06T17:21:53.389Z",
+    "destinations": "??? Ladakh",
+    "startDate": "2026-08-15",
+    "endDate": "2026-08-16",
+    "adults": "2",
+    "children": "0",
+    "budget": "Under ₹10,000",
+    "tripType": "Adventure / Trekking",
+    "specialReq": "food",
+    "name": "Pratham Kumar",
+    "email": "kumarpratham212@gmail.com",
+    "phone": "08851160172",
+    "contactTime": "Morning (9am–12pm)",
+    "createdAt": "2026-08-06T17:21:53.420Z"
+  }
+]\n
