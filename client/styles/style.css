@@ -338,14 +338,14 @@
     .destinations > .section-header, .destinations > .dest-grid { position: relative; z-index: 1; }
     .dest-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1.2rem;
     }
     .dest-card {
       position: relative;
       border-radius: var(--radius);
       overflow: hidden;
-      aspect-ratio: 4/5;
+      aspect-ratio: 3/4;
       cursor: pointer;
       box-shadow: var(--card-shadow);
       border: 1px solid rgba(255,255,255,0.78);
@@ -359,7 +359,7 @@
     .dest-card-overlay {
       position: absolute; inset: 0;
       background: linear-gradient(to top, rgba(13,59,74,0.9) 0%, transparent 55%);
-      padding: 1.8rem;
+      padding: 1.4rem;
       display: flex; flex-direction: column; justify-content: flex-end;
     }
     .dest-tag {
@@ -373,7 +373,7 @@
     }
     .dest-name {
       font-family: var(--font-display);
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: var(--white);
       font-weight: 700;
       margin-bottom: 0.3rem;
@@ -397,7 +397,7 @@
 
     /* large card variant */
     .dest-card.large { aspect-ratio: 16/9; grid-column: span 2; }
-    @media (max-width: 700px) { .dest-card.large { grid-column: span 1; aspect-ratio: 4/5; } }
+    @media (max-width: 700px) { .dest-card.large { grid-column: span 1; aspect-ratio: 3/4; } }
 
     /* ===== WHY US ===== */
     .why-us {

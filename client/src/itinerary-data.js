@@ -282,7 +282,7 @@
         tag: '🏔️ Himachal Pradesh',
         title: 'Kalpa — Kinnaur Escape',
         subtitle: 'Kinnaur Kailash views, apple orchards & peaceful mountain villages',
-        hero: 'images/kalpa (1).jpg.jpg',
+        hero: 'images/kalpa (1).jpg',
         meta: [
           { label: 'Duration', value: '4 Days / 3 Nights' },
           { label: 'From', value: '₹8,499/person' },
@@ -525,6 +525,1434 @@ meta: [
 ]},
         ]
       },
+      meghalaya: {
+  tag: '🌿 Meghalaya',
+  title: 'Meghalaya — Chase Water, Not Checklists',
+  subtitle: 'Waterfalls, living root bridges, crystal rivers & slow mountain travel',
+  hero: 'images/meghalaya (1).jpg',
+  meta: [
+    { label: 'Duration', value: '6 Days 5 Nights' },
+    { label: 'Solo', value: '₹20,999/person' },
+    { label: 'Couple', value: '₹40,999/person' },
+    { label: 'Group of 12', value: '₹15,499/person' },
+  ],
+  gallery: [
+    'images/meghalaya (5).jpg',
+    'images/meghalaya (2).jpg',
+    'images/meghalaya (3).jpg',
+    'images/meghalaya (4).jpg'
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Guwahati → Shillong',
+      stops: [
+        { time: 'Morning/Afternoon', name: 'Delhi → Guwahati', blurb: 'Begin the journey from Delhi towards Guwahati.' },
+        { time: 'Afternoon', name: 'Meet Local Vehicle', blurb: 'Meet your local vehicle at Guwahati and begin the drive towards Shillong.' },
+        { time: 'Evening', name: 'Shillong Check-in', blurb: 'Check into your Shillong stay and settle in.' },
+        { time: 'Evening', name: 'Café & Market Walk', blurb: 'Explore Shillong cafés and the local market at an easy pace.' },
+        { time: 'Night', name: 'Dinner', blurb: 'Enjoy dinner and rest for the adventure ahead.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Shillong → Sohra',
+      stops: [
+        { time: 'Morning', name: 'Laitlum Canyon', blurb: 'Begin the day with a dramatic valley viewpoint before entering the waterfall circuit.' },
+        { time: 'Afternoon', name: 'Wei Sawdong Falls', blurb: 'Visit the beautiful Wei Sawdong waterfall.' },
+        { time: 'Afternoon', name: 'Nohkalikai Falls', blurb: 'Witness one of Meghalaya’s iconic waterfalls.' },
+        { time: 'Afternoon', name: 'Seven Sisters Viewpoint', blurb: 'Stop for panoramic views across the famous Seven Sisters landscape.' },
+        { time: 'Evening', name: 'Sohra Sunset', blurb: 'Reach your stay around Sohra and settle in.' },
+        { time: 'Night', name: 'Bonfire & Stargazing', blurb: 'Enjoy a local dinner, bonfire and stargazing.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Nongriat Day',
+      stops: [
+        { time: '6:00 AM', name: 'Breakfast & Drive', blurb: 'Have breakfast and drive towards Tyrna.' },
+        { time: '7:30 AM', name: 'Nongriat Trek', blurb: 'Trek through the rainforest towards the famous Double-Decker Living Root Bridge.' },
+        { time: 'Morning', name: 'Double-Decker Living Root Bridge', blurb: 'Spend time at one of Meghalaya’s most iconic natural structures.' },
+        { time: 'Optional', name: 'Rainbow Falls', blurb: 'Continue towards Rainbow Falls if trail and weather conditions permit.' },
+        { time: 'Afternoon', name: 'Local Homestay Lunch', blurb: 'Enjoy lunch at a local homestay.' },
+        { time: 'Afternoon', name: 'Return Trek', blurb: 'Begin the trek back before late afternoon.' },
+        { time: 'Evening', name: 'Sohra', blurb: 'Return to Sohra for dinner and rest.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Sohra → Mawlynnong → Dawki',
+      stops: [
+        { time: 'Morning', name: 'Mawlynnong Village', blurb: 'Explore the village, local lanes and viewpoints.' },
+        { time: 'Morning', name: 'Riwai Living Root Bridge', blurb: 'Visit the Living Root Bridge at Riwai.' },
+        { time: 'Afternoon', name: 'Dawki', blurb: 'Drive towards Dawki and the crystal-clear river region.' },
+        { time: 'Afternoon', name: 'Shnongpdeng', blurb: 'Spend the evening around Shnongpdeng rather than making only a quick Dawki stop.' },
+        { time: 'Optional', name: 'River Activities', blurb: 'Kayaking, boating or riverside relaxation depending on weather and water conditions.' },
+        { time: 'Evening', name: 'Riverside Sunset', blurb: 'Watch the sunset beside the river.' },
+        { time: 'Night', name: 'Camp & Bonfire', blurb: 'Stay at a camp or homestay with a bonfire.' }
+      ]
+    },
+    {
+      label: 'Day 4',
+      title: 'Shnongpdeng → Shillong',
+      stops: [
+        { time: 'Morning', name: 'River Morning', blurb: 'Enjoy a slow breakfast beside the river.' },
+        { time: 'Morning', name: 'Kayaking / Boat Ride', blurb: 'Optional kayaking, short boat ride or riverside photography.' },
+        { time: '11:00 AM', name: 'Drive to Shillong', blurb: 'Begin the journey towards Shillong.' },
+        { time: 'Afternoon', name: 'Shillong Check-in', blurb: 'Check into the accommodation and relax.' },
+        { time: 'Evening', name: 'Police Bazaar', blurb: 'Explore Police Bazaar and local cafés.' },
+        { time: 'Night', name: 'Shillong Nightlife', blurb: 'Experience Shillong food and nightlife before the final day.' }
+      ]
+    },
+    {
+      label: 'Day 5',
+      title: 'Shillong → Guwahati → Delhi',
+      stops: [
+        { time: 'Morning', name: 'Shillong Peak', blurb: 'Optional stop at Shillong Peak if time permits.' },
+        { time: 'Morning', name: 'Elephant Falls', blurb: 'Optional visit to Elephant Falls depending on available time.' },
+        { time: 'Afternoon', name: 'Drive to Guwahati', blurb: 'Drive towards Guwahati Airport.' },
+        { time: 'Evening', name: 'Guwahati → Delhi', blurb: 'Fly back from Guwahati to Delhi.' },
+        { time: 'Night', name: 'Trip Ends', blurb: 'Return to Delhi with memories of Meghalaya.' }
+      ]
+    },
+    {
+      label: 'Package',
+      title: 'Package Includes',
+      stops: [
+        { time: 'Included', name: 'Guwahati–Meghalaya–Guwahati Transport', blurb: 'Transportation throughout the Meghalaya itinerary.' },
+        { time: 'Included', name: '5 Nights Accommodation', blurb: 'Accommodation for five nights.' },
+        { time: 'Included', name: 'Meals', blurb: '5 breakfasts and 5 dinners.' },
+        { time: 'Included', name: 'Sohra Sightseeing', blurb: 'Sightseeing around Sohra and its waterfalls.' },
+        { time: 'Included', name: 'Nongriat Trek Logistics', blurb: 'Logistics for the Nongriat trek.' },
+        { time: 'Included', name: 'Mawlynnong & Riwai', blurb: 'Mawlynnong and Riwai experiences.' },
+        { time: 'Included', name: 'Dawki & Shnongpdeng', blurb: 'Dawki and Shnongpdeng experience.' },
+        { time: 'Included', name: 'Bonfire & Coordinator', blurb: 'Bonfire and CompasPanion trip coordination.' }
+      ]
+    },
+    {
+      label: 'Exclusions',
+      title: 'Not Included',
+      stops: [
+        { time: 'Excluded', name: 'Delhi–Guwahati Flights', blurb: 'Flights are excluded unless specifically added.' },
+        { time: 'Excluded', name: 'Lunches', blurb: 'Lunches are not included.' },
+        { time: 'Excluded', name: 'Personal Expenses', blurb: 'Personal expenses are excluded.' },
+        { time: 'Excluded', name: 'Optional Activities', blurb: 'Adventure activities beyond the included allowance are excluded.' },
+        { time: 'Excluded', name: 'Rainbow Falls Extension', blurb: 'The optional Rainbow Falls extension is not included.' },
+        { time: 'Excluded', name: 'Travel Insurance', blurb: 'Travel insurance is excluded.' }
+      ]
+    }
+  ]
+},
+
+nepal: {
+  tag: '🇳🇵 Nepal',
+  title: 'Nepal — From Himalayas to Jungle',
+  subtitle: 'Mountains, lakes, jungle, culture & unforgettable road journeys',
+  hero: 'images/nepal (1).jpg',
+  meta: [
+    { label: 'Duration', value: '7 Days 6 Nights' },
+    { label: 'Solo Shared', value: '₹27,999' },
+    { label: 'Solo Private', value: '₹31,999' },
+    { label: 'Couple', value: '₹49,999/couple' },
+    { label: 'Group of 12', value: '₹24,999/person' }
+  ],
+  gallery: [
+    'images/nepal (5).jpg',
+   'images/nepal (2).jpg',
+   'images/nepal (3).jpg',
+   'images/nepal (4).jpg',
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Sunauli Border',
+      stops: [
+        { time: '6:00–7:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Overnight Journey', blurb: 'Begin the overnight journey towards the Nepal border.' },
+        { time: 'Night', name: 'Dinner Stop', blurb: 'Stop for dinner en route.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Sunauli → Lumbini → Pokhara',
+      stops: [
+        { time: 'Morning', name: 'Enter Nepal', blurb: 'Cross into Nepal and have breakfast.' },
+        { time: 'Morning', name: 'Lumbini', blurb: 'Visit the birthplace of Buddha.' },
+        { time: 'Morning', name: 'Maya Devi Temple', blurb: 'Explore the Maya Devi Temple area.' },
+        { time: 'Morning', name: 'Peace Park & Monasteries', blurb: 'Explore the peaceful monastic surroundings.' },
+        { time: 'Afternoon', name: 'Drive to Pokhara', blurb: 'Continue the scenic road journey towards Pokhara.' },
+        { time: 'Evening', name: 'Phewa Lake Sunset', blurb: 'Walk around Lakeside and enjoy the sunset at Phewa Lake.' },
+        { time: 'Night', name: 'Pokhara', blurb: 'Café hopping and overnight stay in Pokhara.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Pokhara — Mountains + Adventure',
+      stops: [
+        { time: '5:00 AM', name: 'Sarangkot Sunrise', blurb: 'Drive to Sarangkot for sunrise and Himalayan views.' },
+        { time: 'Morning', name: 'Breakfast', blurb: 'Return for breakfast.' },
+        { time: 'Late Morning', name: 'World Peace Pagoda', blurb: 'Visit the World Peace Pagoda and Phewa Lake.' },
+        { time: 'Afternoon', name: 'Adventure Time', blurb: 'Optional paragliding, zipline, ATV or boating.' },
+        { time: 'Evening', name: 'Phewa Lake Sunset', blurb: 'Enjoy sunset and lakeside dinner.' },
+        { time: 'Night', name: 'Bonfire', blurb: 'Optional group bonfire.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Pokhara → Bandipur → Chitwan',
+      stops: [
+        { time: 'Morning', name: 'Bandipur', blurb: 'Stop at the beautiful hilltop Newari town.' },
+        { time: 'Morning', name: 'Old Bazaar', blurb: 'Explore traditional architecture and the old bazaar.' },
+        { time: 'Morning', name: 'Mountain Viewpoints', blurb: 'Enjoy mountain views from Bandipur.' },
+        { time: 'Afternoon', name: 'Drive to Chitwan', blurb: 'Continue towards the jungle region.' },
+        { time: 'Evening', name: 'Village Walk', blurb: 'Explore the village around Chitwan.' },
+        { time: 'Evening', name: 'Tharu Cultural Experience', blurb: 'Experience local Tharu culture.' }
+      ]
+    },
+    {
+      label: 'Day 4',
+      title: 'Chitwan Jungle Day',
+      stops: [
+        { time: 'Morning', name: 'Jungle Experience', blurb: 'Choose according to current park rules and availability.' },
+        { time: 'Morning', name: 'Jeep Safari', blurb: 'Optional jungle safari experience.' },
+        { time: 'Morning', name: 'Canoe / Jungle Walk', blurb: 'Explore the jungle through canoeing or walking.' },
+        { time: 'Afternoon', name: 'Rest', blurb: 'Lunch and relaxed afternoon at the resort.' },
+        { time: 'Evening', name: 'Tharu Cultural Program', blurb: 'Enjoy traditional dance and dinner.' },
+        { time: 'Night', name: 'Bonfire', blurb: 'Bonfire at the resort.' }
+      ]
+    },
+    {
+      label: 'Day 5',
+      title: 'Chitwan → Kathmandu',
+      stops: [
+        { time: 'Morning', name: 'Breakfast & Check-out', blurb: 'Begin the journey towards Kathmandu.' },
+        { time: 'Afternoon', name: 'Kathmandu Check-in', blurb: 'Check into the Kathmandu accommodation.' },
+        { time: 'Evening', name: 'Thamel', blurb: 'Explore cafés, shopping, street food and souvenirs.' },
+        { time: 'Night', name: 'Group Dinner', blurb: 'Enjoy a group dinner in Kathmandu.' }
+      ]
+    },
+    {
+      label: 'Day 6',
+      title: 'Kathmandu — Culture + Hidden Corners',
+      stops: [
+        { time: 'Morning', name: 'Pashupatinath Temple', blurb: 'Visit one of Kathmandu’s most important temples.' },
+        { time: 'Morning', name: 'Boudhanath Stupa', blurb: 'Explore the iconic Buddhist stupa.' },
+        { time: 'Morning', name: 'Swayambhunath', blurb: 'Visit Swayambhunath and its surrounding heritage.' },
+        { time: 'Afternoon', name: 'Newari Lunch', blurb: 'Enjoy traditional Newari cuisine.' },
+        { time: 'Evening', name: 'Kirtipur / Patan', blurb: 'Explore courtyards, temples, local food and traditional architecture.' },
+        { time: 'Night', name: 'Farewell Dinner', blurb: 'Final dinner with a rooftop Kathmandu view.' }
+      ]
+    },
+    {
+      label: 'Day 7',
+      title: 'Kathmandu → Delhi',
+      stops: [
+        { time: 'Morning', name: 'Breakfast & Check-out', blurb: 'Prepare for the return journey.' },
+        { time: 'Day', name: 'Nepal → India Border', blurb: 'Drive towards the Nepal–India border.' },
+        { time: 'Evening/Night', name: 'Delhi Journey', blurb: 'Cross into India and continue towards Delhi.' },
+        { time: 'Night', name: 'Delhi Arrival', blurb: 'Expected late-night or early Saturday arrival.' }
+      ]
+    },
+    {
+      label: 'Package',
+      title: 'Package Includes',
+      stops: [
+        { time: 'Included', name: 'Delhi–Nepal–Delhi Transportation', blurb: 'Round-trip transportation from Delhi.' },
+        { time: 'Included', name: '6 Nights Accommodation', blurb: 'Accommodation throughout the journey.' },
+        { time: 'Included', name: 'Daily Breakfast', blurb: 'Daily breakfast.' },
+        { time: 'Included', name: '6 Dinners', blurb: 'Six dinners included.' },
+        { time: 'Included', name: 'Kathmandu & Pokhara Sightseeing', blurb: 'Sightseeing in both major destinations.' },
+        { time: 'Included', name: 'Sarangkot Sunrise', blurb: 'Sarangkot sunrise experience.' },
+        { time: 'Included', name: 'Bandipur & Chitwan', blurb: 'Bandipur visit and Chitwan jungle experience.' },
+        { time: 'Included', name: 'Tharu Cultural Experience', blurb: 'Traditional cultural experience.' }
+      ]
+    },
+    {
+      label: 'Exclusions',
+      title: 'Not Included',
+      stops: [
+        { time: 'Excluded', name: 'Lunches', blurb: 'Lunches are not included.' },
+        { time: 'Excluded', name: 'Flights', blurb: 'Flights are not included.' },
+        { time: 'Excluded', name: 'Personal Shopping', blurb: 'Shopping and personal expenses are excluded.' },
+        { time: 'Excluded', name: 'Adventure Activities', blurb: 'Paragliding, zipline and similar optional activities are excluded.' },
+        { time: 'Excluded', name: 'Travel Insurance', blurb: 'Travel insurance is excluded.' },
+        { time: 'Excluded', name: 'Visa / Passport Costs', blurb: 'Visa or passport-related costs, if applicable, are excluded.' }
+      ]
+    }
+  ]
+},
+
+uppermustang: {
+  tag: '🏜️ Upper Mustang',
+  title: 'Upper Mustang — The Forbidden Kingdom',
+  subtitle: 'High-altitude desert, ancient monasteries, cave settlements & the Lost Kingdom',
+  hero: 'images/mustang.jpg',
+  meta: [
+    { label: 'Duration', value: '13 Days 12 Nights' },
+    { label: 'Solo', value: '₹1,34,999' },
+    { label: 'Couple', value: '₹2,49,999/couple' },
+    { label: 'Group of 12', value: '₹1,24,999/person' }
+  ],
+  gallery: [
+    'images/mustang.jpg',
+    'images/mustang (3).jpg',
+    'images/mustang (2).jpg',
+    'images/mustang (4).jpg'
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Kathmandu',
+      stops: [
+        { time: 'Morning/Afternoon', name: 'Delhi → Kathmandu', blurb: 'Fly from Delhi to Kathmandu.' },
+        { time: 'Afternoon', name: 'Airport Pickup', blurb: 'Transfer to the hotel and check in.' },
+        { time: 'Evening', name: 'Thamel', blurb: 'Explore Thamel and enjoy the welcome dinner.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Kathmandu',
+      stops: [
+        { time: 'Morning', name: 'Pashupatinath', blurb: 'Visit Pashupatinath Temple.' },
+        { time: 'Morning', name: 'Boudhanath', blurb: 'Explore Boudhanath Stupa.' },
+        { time: 'Afternoon', name: 'Patan Durbar Square', blurb: 'Explore the historic square and traditional architecture.' },
+        { time: 'Evening', name: 'Trek Briefing', blurb: 'Complete briefing, permit/document check and gear check.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Kathmandu → Pokhara',
+      stops: [
+        { time: 'Morning', name: 'Kathmandu → Pokhara', blurb: 'Drive or fly to Pokhara depending on the group plan.' },
+        { time: 'Afternoon', name: 'Pokhara Check-in', blurb: 'Check into the accommodation.' },
+        { time: 'Afternoon', name: 'Phewa Lake', blurb: 'Relax around Phewa Lake and Lakeside.' },
+        { time: 'Evening', name: 'Sunset Boat Ride', blurb: 'Enjoy a sunset boat ride followed by dinner.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Pokhara → Jomsom → Kagbeni',
+      stops: [
+        { time: 'Early Morning', name: 'Pokhara → Jomsom', blurb: 'Take the mountain flight from Pokhara to Jomsom.' },
+        { time: 'Morning', name: 'Jomsom → Kagbeni', blurb: 'Drive or trek towards Kagbeni.' },
+        { time: 'Afternoon', name: 'Kagbeni', blurb: 'Explore ancient lanes and Tibetan-influenced architecture.' },
+        { time: 'Evening', name: 'Kali Gandaki Valley', blurb: 'Enjoy the landscape and sunset around the valley.' }
+      ]
+    },
+    {
+      label: 'Day 4',
+      title: 'Kagbeni → Chele',
+      stops: [
+        { time: 'Morning', name: 'Upper Mustang Entry', blurb: 'Enter the Upper Mustang restricted region after the permit checkpoint.' },
+        { time: 'Morning', name: 'Tangbe', blurb: 'Continue through traditional Mustang landscapes.' },
+        { time: 'Afternoon', name: 'Chhusang', blurb: 'Travel through dry cliffs, canyons and Tibetan-style villages.' },
+        { time: 'Evening', name: 'Chele', blurb: 'Explore the village and enjoy the sunset.' }
+      ]
+    },
+    {
+      label: 'Day 5',
+      title: 'Chele → Syangbochen → Ghami',
+      stops: [
+        { time: 'Morning', name: 'High Mountain Passes', blurb: 'Continue through high passes, red cliffs and canyons.' },
+        { time: 'Afternoon', name: 'Ghami', blurb: 'Reach the remote village of Ghami.' },
+        { time: 'Evening', name: 'Ghami Monastery', blurb: 'Explore the ancient monastery and traditional houses.' }
+      ]
+    },
+    {
+      label: 'Day 6',
+      title: 'Ghami → Tsarang',
+      stops: [
+        { time: 'Morning', name: 'Mani Walls', blurb: 'Continue towards Tsarang through traditional Mustang landscapes.' },
+        { time: 'Afternoon', name: 'Tsarang', blurb: 'Explore monasteries and traditional Mustang architecture.' },
+        { time: 'Evening', name: 'Tsarang Palace Area', blurb: 'Visit the palace and monastery area.' },
+        { time: 'Sunset', name: 'High-Desert Sunset', blurb: 'Experience the dramatic Mustang sunset.' }
+      ]
+    },
+    {
+      label: 'Day 7',
+      title: 'Tsarang → Lo Manthang',
+      stops: [
+        { time: 'Morning', name: 'Drive to Lo Manthang', blurb: 'Travel towards the historic walled capital of the former Kingdom of Lo.' },
+        { time: 'Afternoon', name: 'Lo Manthang', blurb: 'Enter the ancient walled city and explore its narrow alleys.' },
+        { time: 'Evening', name: 'Lo Manthang Sunset', blurb: 'Watch the sunset around the ancient city.' },
+        { time: 'Night', name: 'Group Dinner', blurb: 'Enjoy a group dinner in Lo Manthang.' }
+      ]
+    },
+    {
+      label: 'Day 8',
+      title: 'Lo Manthang Exploration',
+      stops: [
+        { time: 'Morning', name: 'Jampa Gompa', blurb: 'Explore the historic monastery.' },
+        { time: 'Morning', name: 'Thubchen Gompa', blurb: 'Visit another important monastery of Lo Manthang.' },
+        { time: 'Morning', name: 'Chodey Gompa', blurb: 'Explore the cultural and religious heritage of the city.' },
+        { time: 'Afternoon', name: 'Chhoser Excursion', blurb: 'Visit cave settlements and remote villages around Chhoser.' },
+        { time: 'Evening', name: 'Return to Lo Manthang', blurb: 'Return to the walled city for the night.' }
+      ]
+    },
+    {
+      label: 'Day 9',
+      title: 'Lo Manthang → Dhakmar',
+      stops: [
+        { time: 'Morning', name: 'Return Route', blurb: 'Take a different route back if road conditions permit.' },
+        { time: 'Day', name: 'High Passes & Red Cliffs', blurb: 'Travel through dramatic high passes and red cliffs.' },
+        { time: 'Evening', name: 'Dhakmar', blurb: 'Reach Dhakmar and experience its famous red cliffs.' }
+      ]
+    },
+    {
+      label: 'Day 10',
+      title: 'Dhakmar → Kagbeni / Jomsom',
+      stops: [
+        { time: 'Morning', name: 'Lower Mustang', blurb: 'Begin descending through Lower Mustang.' },
+        { time: 'Day', name: 'Ghami → Tsarang → Chhusang', blurb: 'Pass through major Mustang settlements.' },
+        { time: 'Evening', name: 'Kagbeni / Jomsom', blurb: 'Overnight depending on road conditions and group pace.' }
+      ]
+    },
+    {
+      label: 'Day 11',
+      title: 'Jomsom → Pokhara',
+      stops: [
+        { time: 'Morning', name: 'Jomsom → Pokhara', blurb: 'Take the early flight subject to weather.' },
+        { time: 'Afternoon', name: 'Rest', blurb: 'Check in and relax at the hotel.' },
+        { time: 'Afternoon', name: 'Spa / Pool', blurb: 'Enjoy some recovery time after the expedition.' },
+        { time: 'Evening', name: 'Lakeside', blurb: 'Relax at a Lakeside café.' },
+        { time: 'Night', name: 'Farewell Dinner', blurb: 'Enjoy the final Pokhara evening.' }
+      ]
+    },
+    {
+      label: 'Day 12',
+      title: 'Pokhara → Kathmandu → Delhi',
+      stops: [
+        { time: 'Morning', name: 'Pokhara → Kathmandu', blurb: 'Fly or drive back to Kathmandu.' },
+        { time: 'Afternoon', name: 'Last-minute Shopping', blurb: 'Use the remaining time for shopping and lunch.' },
+        { time: 'Afternoon', name: 'Kathmandu Airport', blurb: 'Transfer to the airport.' },
+        { time: 'Evening', name: 'Kathmandu → Delhi', blurb: 'Fly back to Delhi.' }
+      ]
+    }
+  ]
+},
+
+uppermustangborder: {
+  tag: '🇳🇵 Upper Mustang',
+  title: 'Upper Mustang — Beyond the Himalayas',
+  subtitle: 'A flagship 4×4 expedition into Nepal’s ancient Himalayan desert kingdom',
+  hero: 'images/mustang.jpg',
+  meta: [
+    { label: 'Duration', value: '10 Days 9 Nights' },
+    { label: 'Solo', value: '₹1,19,999' },
+    { label: 'Couple', value: '₹2,19,999/couple' },
+    { label: 'Group of 12', value: '₹1,09,999/person' }
+  ],
+  gallery: [
+   'images/mustang.jpg',
+    'images/mustang (3).jpg',
+    'images/mustang (2).jpg',
+    'images/mustang (4).jpg'
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Sunauli → Pokhara',
+      stops: [
+        { time: 'Morning', name: 'Enter Nepal', blurb: 'Begin the Upper Mustang expedition from the Nepal border.' },
+        { time: 'Day', name: 'Drive to Pokhara', blurb: 'Continue towards Pokhara.' },
+        { time: 'Evening', name: 'Pokhara', blurb: 'Check in and relax.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Pokhara',
+      stops: [
+        { time: 'Morning', name: 'Pokhara', blurb: 'Enjoy a relaxed morning around Pokhara.' },
+        { time: 'Afternoon', name: 'Phewa Lake', blurb: 'Explore Lakeside and Phewa Lake.' },
+        { time: 'Evening', name: 'Preparation', blurb: 'Prepare for the Upper Mustang expedition.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Pokhara → Jomsom → Kagbeni',
+      stops: [
+        { time: 'Morning', name: 'Pokhara → Jomsom', blurb: 'Fly from Pokhara to Jomsom.' },
+        { time: 'Day', name: 'Kagbeni', blurb: 'Travel towards Kagbeni and explore the ancient village.' },
+        { time: 'Evening', name: 'Kagbeni', blurb: 'Experience the traditional Mustang landscape.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Kagbeni → Chele',
+      stops: [
+        { time: 'Morning', name: 'Restricted Region', blurb: 'Enter Upper Mustang after the required permit checkpoint.' },
+        { time: 'Day', name: 'Tangbe → Chhusang', blurb: 'Travel through dry cliffs, canyons and traditional villages.' },
+        { time: 'Evening', name: 'Chele', blurb: 'Explore Chele and its surrounding landscapes.' }
+      ]
+    },
+    {
+      label: 'Day 4',
+      title: 'Chele → Ghami',
+      stops: [
+        { time: 'Morning', name: 'High Passes', blurb: 'Cross high mountain passes and dramatic red cliffs.' },
+        { time: 'Afternoon', name: 'Ghami', blurb: 'Reach Ghami and explore its traditional settlement.' },
+        { time: 'Evening', name: 'Ghami Monastery', blurb: 'Visit the ancient monastery and village.' }
+      ]
+    },
+    {
+      label: 'Day 5',
+      title: 'Ghami → Tsarang',
+      stops: [
+        { time: 'Morning', name: 'Mani Walls', blurb: 'Continue through traditional Mustang landscapes.' },
+        { time: 'Afternoon', name: 'Tsarang', blurb: 'Explore Tsarang and its ancient monasteries.' },
+        { time: 'Sunset', name: 'High Desert Sunset', blurb: 'Experience the dramatic Mustang sunset.' }
+      ]
+    },
+    {
+      label: 'Day 6',
+      title: 'Tsarang → Lo Manthang',
+      stops: [
+        { time: 'Morning', name: 'Lo Manthang', blurb: 'Drive towards the historic walled capital of the former Kingdom of Lo.' },
+        { time: 'Afternoon', name: 'Walled City', blurb: 'Explore narrow alleys and traditional Tibetan architecture.' },
+        { time: 'Evening', name: 'Lo Manthang', blurb: 'Enjoy sunset and a relaxed evening.' }
+      ]
+    },
+    {
+      label: 'Day 7',
+      title: 'Lo Manthang → Chhoser → Dhakmar',
+      stops: [
+        { time: 'Morning', name: 'Lo Manthang', blurb: 'Explore the cultural heart of Upper Mustang.' },
+        { time: 'Afternoon', name: 'Chhoser', blurb: 'Visit ancient cave settlements and monasteries.' },
+        { time: 'Evening', name: 'Dhakmar', blurb: 'Continue towards Dhakmar and its red cliffs.' }
+      ]
+    },
+    {
+      label: 'Day 8',
+      title: 'Dhakmar → Kagbeni → Jomsom',
+      stops: [
+        { time: 'Morning', name: 'Lower Mustang', blurb: 'Descend through the dramatic Lower Mustang landscape.' },
+        { time: 'Day', name: 'Kagbeni', blurb: 'Pass through Kagbeni on the return route.' },
+        { time: 'Evening', name: 'Jomsom', blurb: 'Reach Jomsom for the night.' }
+      ]
+    },
+    {
+      label: 'Day 9',
+      title: 'Jomsom → Pokhara → Sunauli',
+      stops: [
+        { time: 'Morning', name: 'Jomsom → Pokhara', blurb: 'Fly back to Pokhara subject to weather.' },
+        { time: 'Day', name: 'Pokhara → Sunauli', blurb: 'Begin the return road journey towards the Nepal border.' },
+        { time: 'Night', name: 'Sunauli', blurb: 'Complete the Upper Mustang expedition.' }
+      ]
+    },
+    {
+      label: 'Package',
+      title: 'Package Includes',
+      stops: [
+        { time: 'Included', name: 'Sunauli–Pokhara–Sunauli Transport', blurb: 'Transportation from the Nepal border.' },
+        { time: 'Included', name: 'Accommodation', blurb: 'Pokhara and Upper Mustang accommodation.' },
+        { time: 'Included', name: 'Pokhara–Jomsom Flights', blurb: 'Round-trip flights between Pokhara and Jomsom.' },
+        { time: 'Included', name: '4WD Mustang Transportation', blurb: '4WD transportation throughout Upper Mustang.' },
+        { time: 'Included', name: 'Restricted-Area Permit', blurb: 'Upper Mustang restricted-area permit.' },
+        { time: 'Included', name: 'Licensed Local Guide', blurb: 'Local guide and support staff.' },
+        { time: 'Included', name: 'Breakfast & Dinner', blurb: 'Daily breakfast and dinner.' }
+      ]
+    }
+  ]
+},
+
+tungnath: {
+  tag: '🏔️ Tungnath',
+  title: 'Tungnath & Chandrashila',
+  subtitle: 'Mountain trek, sunrise, meadows, forests, bonfire & Himalayan views',
+  hero: 'images/tungnath.jpg',
+  meta: [
+    { label: 'Duration', value: '4 Days 3 Nights' },
+    { label: 'Solo Shared', value: '₹7,999/person' },
+    { label: 'Solo Private', value: '₹9,499/person' },
+    { label: 'Couple', value: '₹15,999/couple' },
+    { label: 'Group of 12', value: '₹7,999/person' }
+  ],
+  gallery: [
+    'images/tungnath (4).jpg',
+    'images/tungnath (2).jpg',
+    'images/tungnath (3).jpg',
+   'images/tungnath (5).jpg',
+
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Chopta',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Traveller.' },
+        { time: 'Evening', name: 'Group Games', blurb: 'Get to know the group through introductions and travel games.' },
+        { time: 'Night', name: 'Overnight Journey', blurb: 'Travel overnight towards Chopta.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Delhi → Chopta',
+      stops: [
+        { time: 'Morning', name: 'Breakfast Stop', blurb: 'Stop for breakfast while continuing towards Garhwal.' },
+        { time: 'Day', name: 'Devprayag', blurb: 'Stop at the confluence of the Alaknanda and Bhagirathi rivers.' },
+        { time: 'Day', name: 'Rudraprayag', blurb: 'Continue through the Himalayan landscape.' },
+        { time: 'Afternoon', name: 'Chopta Check-in', blurb: 'Reach Chopta/Sari-Ukhimath region and check in.' },
+        { time: 'Evening', name: 'Forest Walk', blurb: 'Enjoy a short relaxed walk around the forests and meadows.' },
+        { time: 'Night', name: 'Bonfire & Stargazing', blurb: 'Enjoy dinner, music, group games, bonfire and stargazing.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Tungnath + Chandrashila',
+      stops: [
+        { time: '4:30 AM', name: 'Wake Up', blurb: 'Wake up and have a quick breakfast with packed snacks.' },
+        { time: '5:30 AM', name: 'Trek to Tungnath', blurb: 'Begin the approximately 3.5–4 km uphill trek.' },
+        { time: '8:00–9:00 AM', name: 'Tungnath Temple', blurb: 'Visit the temple, rest and take photographs.' },
+        { time: 'Optional', name: 'Chandrashila', blurb: 'Continue approximately 1.5 km uphill for experienced and fit members.' },
+        { time: 'Morning', name: 'Himalayan Views', blurb: 'On clear days, views include Kedarnath range, Chaukhamba, Nanda Devi and Trishul.' },
+        { time: 'Afternoon', name: 'Return to Chopta', blurb: 'Descend towards Chopta for lunch and rest.' },
+        { time: 'Evening', name: 'Meadow Walk', blurb: 'Enjoy a golden-hour meadow walk.' },
+        { time: 'Night', name: 'Bonfire', blurb: 'Enjoy the second bonfire night.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Chopta → Sari → Deoria Tal → Delhi',
+      stops: [
+        { time: 'Morning', name: 'Breakfast & Check-out', blurb: 'Start the final day after breakfast.' },
+        { time: '8:00 AM', name: 'Sari Village', blurb: 'Drive towards Sari Village.' },
+        { time: '9:00 AM', name: 'Deoria Tal Trek', blurb: 'Take the short forest hike towards Deoria Tal.' },
+        { time: 'Morning', name: 'Deoria Tal', blurb: 'Relax beside the beautiful Himalayan lake.' },
+        { time: 'Afternoon', name: 'Return to Sari', blurb: 'Return to Sari for lunch.' },
+        { time: 'Afternoon', name: 'Delhi Journey', blurb: 'Start the drive towards Delhi with stops at Rudraprayag and Devprayag.' },
+        { time: 'Night', name: 'Overnight Drive', blurb: 'Continue towards Delhi.' }
+      ]
+    },
+    {
+      label: 'Package',
+      title: 'Package Includes',
+      stops: [
+        { time: 'Included', name: 'Delhi–Chopta–Delhi Traveller', blurb: 'Round-trip group transportation.' },
+        { time: 'Included', name: '2 Nights Accommodation', blurb: 'Two nights accommodation.' },
+        { time: 'Included', name: 'Meals', blurb: 'Two breakfasts and two dinners.' },
+        { time: 'Included', name: 'Tungnath Trek', blurb: 'Tungnath trek included.' },
+        { time: 'Included', name: 'Chandrashila Trek', blurb: 'Chandrashila trek included.' },
+        { time: 'Included', name: 'Bonfire & Stargazing', blurb: 'Bonfire and stargazing experiences.' }
+      ]
+    }
+  ]
+},
+
+tungnathbudget: {
+  tag: '🥾 Tungnath',
+  title: 'Tungnath — Weekend Expedition',
+  subtitle: 'A budget-friendly Himalayan trek with sunrise, bonfire & Chandrashila',
+  hero: 'images/tungnath.jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo', value: '₹6,999/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group', value: '₹6,250/person' }
+  ],
+  gallery: [
+    'images/tungnath (1).jpg',
+     'images/tungnath (2).jpg',
+      'images/tungnath (3).jpg',
+       'images/tungnath (4).jpg',
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Chopta',
+      stops: [
+        { time: '7:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Introductions & Games', blurb: 'Group introductions and travel games.' },
+        { time: 'Night', name: 'Overnight Journey', blurb: 'Begin the overnight journey towards Chopta.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Delhi → Chopta',
+      stops: [
+        { time: 'Morning', name: 'Breakfast Stop', blurb: 'Stop for breakfast while travelling towards Uttarakhand.' },
+        { time: 'Day', name: 'Devprayag', blurb: 'Quick Himalayan sightseeing stop.' },
+        { time: 'Day', name: 'Rudraprayag', blurb: 'Continue through mountain roads and viewpoints.' },
+        { time: 'Afternoon', name: 'Chopta', blurb: 'Reach Chopta and check into the budget homestay.' },
+        { time: 'Evening', name: 'Forest & Meadow Walk', blurb: 'Enjoy a relaxed walk around Chopta.' },
+        { time: 'Night', name: 'Bonfire', blurb: 'Music, games, stargazing and dinner.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Tungnath + Chandrashila',
+      stops: [
+        { time: '4:30 AM', name: 'Wake Up', blurb: 'Quick breakfast or tea with packed snacks.' },
+        { time: '5:30 AM', name: 'Tungnath Trek', blurb: 'Begin the approximately 3.5–4 km trek.' },
+        { time: '8:00–9:00 AM', name: 'Tungnath Temple', blurb: 'Visit the temple and rest.' },
+        { time: '9:15 AM', name: 'Chandrashila', blurb: 'Optional additional climb of approximately 1.5 km.' },
+        { time: 'Morning', name: 'Mountain Views', blurb: 'Enjoy panoramic Himalayan views and group photographs.' },
+        { time: 'Afternoon', name: 'Chopta', blurb: 'Descend, have lunch and rest.' },
+        { time: 'Evening', name: 'Final Bonfire', blurb: 'Enjoy the final bonfire and dinner.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Chopta → Delhi',
+      stops: [
+        { time: '5:30 AM', name: 'Wake Up', blurb: 'Start the return day early.' },
+        { time: '6:00 AM', name: 'Breakfast', blurb: 'Have breakfast before departure.' },
+        { time: '6:30 AM', name: 'Return Journey', blurb: 'Start the drive towards Delhi.' },
+        { time: 'Day', name: 'Rudraprayag & Devprayag', blurb: 'Make quick scenic stops en route.' },
+        { time: 'Evening/Night', name: 'Delhi', blurb: 'Expected Delhi arrival around 8–11 PM.' }
+      ]
+    }
+  ]
+},
+
+shimla: {
+  tag: '🌲 Shimla',
+  title: 'Shimla Off the Map',
+  subtitle: 'Deodar forests, apple villages, slow cafés & the quieter side of Shimla',
+  hero: 'images/shimla.jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹6,999/person' },
+    { label: 'Solo Private', value: '₹8,499/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group of 12', value: '₹6,999/person' }
+  ],
+  gallery: [
+    'images/shimla.jpg',
+    'images/shimla (1).jpg',
+     'images/shimla (2).jpg',
+      'images/shimla (3).jpg',
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Mashobra',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Travel Games', blurb: 'Group introductions and travel games.' },
+        { time: 'Night', name: 'Overnight Drive', blurb: 'Travel towards Shimla and Mashobra.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Mashobra — Forest → Village → Sunset',
+      stops: [
+        { time: '7:00 AM', name: 'Reach Mashobra', blurb: 'Arrive, have breakfast and leave luggage at the property.' },
+        { time: '9:00 AM', name: 'Craignano Forest Walk', blurb: 'Walk through cedar and pine forests around Craignano.' },
+        { time: '11:30 AM', name: 'Local Chai Stop', blurb: 'Enjoy tea and Himachali snacks.' },
+        { time: '12:30 PM', name: 'Check-in', blurb: 'Check into a homestay or boutique property around Mashobra.' },
+        { time: '3:00 PM', name: 'Hidden Mashobra', blurb: 'Explore village lanes, forest paths, temples and seasonal apple orchards.' },
+        { time: '5:30 PM', name: 'Sunset', blurb: 'Head to a quiet viewpoint around Mashobra or Chharabra.' },
+        { time: '7:30 PM', name: 'CompasPanion Night', blurb: 'Bonfire, music, group games, stargazing and dinner.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Fagu → Naldehra → Old Shimla',
+      stops: [
+        { time: '6:30 AM', name: 'Sunrise Walk', blurb: 'Enjoy tea and a short morning walk.' },
+        { time: '9:00 AM', name: 'Fagu', blurb: 'Drive towards the quieter high-altitude hamlet.' },
+        { time: 'Morning', name: 'Fagu Village', blurb: 'Explore village lanes, apple orchards when seasonal, farming landscapes and viewpoints.' },
+        { time: '12:00 PM', name: 'Naldehra', blurb: 'Walk through the cedar surroundings.' },
+        { time: '2:30 PM', name: 'Forest & Meadow Time', blurb: 'Slow down with walking, photographs and mountain views.' },
+        { time: '4:30 PM', name: 'Old Shimla', blurb: 'Explore the Ridge, Christ Church exterior, Mall Road and Lakkar Bazaar.' },
+        { time: '7:00 PM', name: 'Return to Delhi', blurb: 'Start the overnight journey back towards Delhi.' }
+      ]
+    }
+  ]
+},
+
+manali: {
+  tag: '🏔️ Manali',
+  title: 'The Other Side of Manali',
+  subtitle: 'Hidden villages, waterfalls, old Himalayan architecture & slow mountain mornings',
+  hero: 'images/manali.jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹6,999/person' },
+    { label: 'Solo Private', value: '₹8,499/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group of 12', value: '₹6,999/person' }
+  ],
+  gallery: [
+    'images/manali (1).jpg',
+    'images/manali (2).jpg',
+    'images/manali (2).jpg',
+    'images/manali (4).jpg',
+   
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Manali',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Traveller.' },
+        { time: 'Evening', name: 'Travel Disco', blurb: 'Enjoy introductions and a fun travel atmosphere.' },
+        { time: 'Night', name: 'Overnight Journey', blurb: 'Travel overnight towards Manali.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Manali → Sethan → Hamta',
+      stops: [
+        { time: 'Morning', name: 'Reach Manali', blurb: 'Have breakfast, freshen up and leave luggage at the property.' },
+        { time: '9:30 AM', name: 'Sethan Village', blurb: 'Explore the quieter mountain village above Manali.' },
+        { time: 'Morning', name: 'Village & Viewpoints', blurb: 'Walk through the village, explore viewpoints and local cafés.' },
+        { time: 'Afternoon', name: 'Hamta Side', blurb: 'Take a short guided nature walk around the Hamta area.' },
+        { time: '5:00 PM', name: 'Mountain Café', blurb: 'Relax at a mountain café during sunset.' },
+        { time: '7:30 PM', name: 'CompasPanion Night', blurb: 'Bonfire, music, games, stargazing and dinner.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Sajla → Naggar → Jana',
+      stops: [
+        { time: '7:30 AM', name: 'Breakfast', blurb: 'Start the day with breakfast.' },
+        { time: '9:00 AM', name: 'Sajla Waterfall', blurb: 'Walk to the waterfall and explore the surrounding forest.' },
+        { time: '11:30 AM', name: 'Himachali Lunch', blurb: 'Enjoy local food at a café.' },
+        { time: '1:00 PM', name: 'Naggar', blurb: 'Explore Naggar Castle, old village lanes, mountain views and local art.' },
+        { time: '3:00 PM', name: 'Jana Village', blurb: 'Continue towards Jana Village.' },
+        { time: 'Afternoon', name: 'Jana Waterfall', blurb: 'Take a short forest walk to the waterfall.' },
+        { time: '8:30 PM', name: 'Return Journey', blurb: 'Begin the overnight drive towards Delhi.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Delhi Arrival',
+      stops: [
+        { time: 'Morning', name: 'Delhi Arrival', blurb: 'Expected arrival around 6–9 AM depending on traffic and road conditions.' }
+      ]
+    }
+  ]
+},
+
+jibhi: {
+  tag: '🌲 Jibhi',
+  title: 'Nomad by Chance',
+  subtitle: 'Jibhi, Shoja, Jalori Pass & Serolsar Lake — slow down and get lost',
+  hero: 'images/jibhi (5).jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹6,999/person' },
+    { label: 'Solo Private', value: '₹8,499/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group of 12', value: '₹6,999/person' }
+  ],
+  gallery: [
+    'images/jibhi (1).jpg',
+    'images/jibhi (2).jpg',
+    'images/jibhi (3).jpg',
+    'images/jibhi (4).jpg',
+   
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Jibhi',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Travel Games', blurb: 'Introductions and group travel games.' },
+        { time: 'Night', name: 'Mountain Drive', blurb: 'Begin the overnight journey towards Jibhi.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Jibhi — Slow Down & Get Lost',
+      stops: [
+        { time: '7:30 AM', name: 'Arrive in Jibhi', blurb: 'Freshen up, have breakfast and drop luggage.' },
+        { time: '9:30 AM', name: 'Jibhi Waterfall', blurb: 'Walk through the village to Jibhi Waterfall.' },
+        { time: '11:00 AM', name: 'Local Café', blurb: 'Relax with coffee and snacks overlooking the valley.' },
+        { time: '12:00 PM', name: 'Hidden Village Walk', blurb: 'Explore wooden homes, apple orchards, forest paths and local village life.' },
+        { time: '1:30 PM', name: 'Himachali Lunch', blurb: 'Enjoy local food at a homestay or café.' },
+        { time: '3:00 PM', name: 'Shoja', blurb: 'Drive uphill into dense cedar forests and quieter landscapes.' },
+        { time: '4:30 PM', name: 'Sunset Walk', blurb: 'Enjoy a short forest walk around Shoja.' },
+        { time: '7:30 PM', name: 'Nomad Night', blurb: 'Bonfire, music, stargazing, games and dinner.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Jalori Pass + Serolsar Lake',
+      stops: [
+        { time: '6:30 AM', name: 'Wake Up', blurb: 'Start with tea and breakfast.' },
+        { time: '8:00 AM', name: 'Jalori Pass', blurb: 'Drive towards Jalori Pass through winding mountain roads.' },
+        { time: '9:00 AM', name: 'Serolsar Lake Trek', blurb: 'Begin the forest trail towards Serolsar Lake.' },
+        { time: 'Morning', name: 'Serolsar Lake', blurb: 'Relax beside the lake, photograph the landscape and enjoy packed snacks.' },
+        { time: '12:00 PM', name: 'Descend', blurb: 'Start the return trek.' },
+        { time: '2:30 PM', name: 'Jalori Exploration', blurb: 'Explore viewpoints, forest trails and small mountain settlements.' },
+        { time: '5:30 PM', name: 'Free Time', blurb: 'Enjoy cafés and riverside or stream-side relaxation.' },
+        { time: '7:30 PM', name: 'Final Bonfire', blurb: 'Enjoy the final evening together.' },
+        { time: '9:30 PM', name: 'Delhi Journey', blurb: 'Begin the overnight return journey.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Back to Delhi',
+      stops: [
+        { time: 'Morning', name: 'Delhi Arrival', blurb: 'Expected arrival around 6–9 AM depending on traffic and road conditions.' }
+      ]
+    }
+  ]
+},
+
+kashmir: {
+  tag: '🏔️ Kashmir',
+  title: 'Kashmir — Beyond the Postcard',
+  subtitle: 'Gurez, Tulail, Lolab & Bangus — the valleys nobody told you about',
+  hero: 'images/gurez (1).jpg',
+  meta: [
+    { label: 'Duration', value: '7 Days 6 Nights' },
+    { label: 'Solo Shared', value: '₹39,999' },
+    { label: 'Solo Private', value: '₹44,999' },
+    { label: 'Couple', value: '₹79,999/couple' },
+    { label: 'Group of 12', value: '₹39,999/person' }
+  ],
+  gallery: [
+    'images/gurez (1).jpg',
+     'images/gurez (2).jpg',
+      'images/gurez (3).jpg',
+    
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Srinagar',
+      stops: [
+        { time: 'Day', name: 'Delhi → Srinagar', blurb: 'Fly from Delhi to Srinagar.' },
+        { time: 'Afternoon', name: 'Nigeen / Srinagar', blurb: 'Transfer and check into the accommodation.' },
+        { time: 'Evening', name: 'Nigeen Shikara Ride', blurb: 'Enjoy an evening Shikara ride on Nigeen Lake.' },
+        { time: 'Night', name: 'Kashmiri Dinner', blurb: 'Enjoy a traditional Kashmiri dinner and trip briefing.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Old Srinagar → Doodhpathri',
+      stops: [
+        { time: 'Morning', name: 'Shehr-e-Khaas', blurb: 'Explore Old Srinagar and its traditional wooden lanes.' },
+        { time: 'Morning', name: 'Local Bakery', blurb: 'Try girda and noon chai at a traditional bakery.' },
+        { time: 'Afternoon', name: 'Doodhpathri', blurb: 'Drive towards the quieter meadow.' },
+        { time: 'Evening', name: 'Meadow Walk', blurb: 'Enjoy streams, photography and sunset.' },
+        { time: 'Night', name: 'Srinagar', blurb: 'Return to Srinagar for the night.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Srinagar → Gurez Valley',
+      stops: [
+        { time: '6:00 AM', name: 'Early Departure', blurb: 'Begin the journey towards Gurez.' },
+        { time: 'Morning', name: 'Razdan Pass', blurb: 'Cross Razdan Pass and stop for mountain views and chai.' },
+        { time: 'Afternoon', name: 'Dawar', blurb: 'Reach Gurez and check into a local homestay or camp.' },
+        { time: 'Evening', name: 'Kishanganga River', blurb: 'Walk along the river.' },
+        { time: 'Night', name: 'Local Family Meal', blurb: 'Enjoy a local meal, kahwa and stories from Gurez.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Gurez → Tulail',
+      stops: [
+        { time: 'Morning', name: '4×4 Valley Drive', blurb: 'Drive deeper into Gurez towards Tulail.' },
+        { time: 'Day', name: 'Tulail', blurb: 'Explore traditional wooden homes, villages and river viewpoints.' },
+        { time: 'Day', name: 'Mountain Trails', blurb: 'Walk through local trails and experience Dard-Shin culture.' },
+        { time: 'Evening', name: 'Return to Dawar', blurb: 'Return to Dawar.' },
+        { time: 'Night', name: 'Bonfire & Stargazing', blurb: 'Enjoy local dinner, bonfire and stargazing.' }
+      ]
+    },
+    {
+      label: 'Day 4',
+      title: 'Gurez → Lolab Valley',
+      stops: [
+        { time: 'Morning', name: 'Depart Gurez', blurb: 'Drive back towards Srinagar and onward to Lolab.' },
+        { time: 'Afternoon', name: 'Lolab Valley', blurb: 'Explore orchards, forests and traditional villages.' },
+        { time: 'Afternoon', name: 'Orchard Walk', blurb: 'Visit apple orchards, walnut groves and local villages depending on season.' },
+        { time: 'Evening', name: 'Kalaroos', blurb: 'Visit the Kalaroos area or caves if local access permits.' },
+        { time: 'Night', name: 'Lolab Homestay', blurb: 'Stay in a simple local homestay.' }
+      ]
+    },
+    {
+      label: 'Day 5',
+      title: 'Lolab → Bangus Valley',
+      stops: [
+        { time: 'Morning', name: '4×4 Transfer', blurb: 'Head towards Bangus Valley.' },
+        { time: 'Day', name: 'Bangus Meadow', blurb: 'Walk through the high-altitude meadow and enjoy mountain views.' },
+        { time: 'Day', name: 'Shepherd Settlements', blurb: 'Experience shepherd settlements and wildflowers when in season.' },
+        { time: 'Optional', name: 'Gujjar Family Visit', blurb: 'If available, arrange a respectful visit with a Gujjar shepherd family.' },
+        { time: 'Evening', name: 'Return to Lolab / Kupwara', blurb: 'Return towards the Lolab or Kupwara side.' }
+      ]
+    },
+    {
+      label: 'Day 6',
+      title: 'Lolab → Srinagar',
+      stops: [
+        { time: 'Morning', name: 'Slow Breakfast', blurb: 'Enjoy a relaxed morning before returning.' },
+        { time: 'Day', name: 'Village / Stream Stop', blurb: 'Stop for tea at a quiet village or stream-side location.' },
+        { time: 'Evening', name: 'Nigeen / Dal Lake', blurb: 'Enjoy the final evening around Srinagar’s lakes.' },
+        { time: 'Evening', name: 'Kahwa & Shopping', blurb: 'Shop for local handicrafts and enjoy kahwa.' },
+        { time: 'Night', name: 'Farewell Dinner', blurb: 'Enjoy a Wazwan-inspired farewell dinner and closing circle.' }
+      ]
+    },
+    {
+      label: 'Day 7',
+      title: 'Srinagar → Delhi',
+      stops: [
+        { time: 'Morning', name: 'Breakfast & Check-out', blurb: 'Prepare for the return journey.' },
+        { time: 'Day', name: 'Srinagar → Delhi', blurb: 'Fly back to Delhi and end the expedition.' }
+      ]
+    }
+  ]
+},
+
+hampta: {
+  tag: '🏔️ Hampta Pass',
+  title: 'Hampta — Where the Mountain Changes Colour',
+  subtitle: 'One trail, four landscapes — forest, meadows, snow and Lahaul desert',
+  hero: 'images/hampta (1).jpg',
+  meta: [
+    { label: 'Duration', value: '6 Days 5 Nights' },
+    { label: 'Solo Shared Tent', value: '₹12,499/person' },
+    { label: 'Solo Private Tent', value: '₹14,499/person' },
+    { label: 'Couple', value: '₹24,999/couple' },
+    { label: 'Group of 12', value: '₹12,499/person' }
+  ],
+  gallery: [
+    'images/hampta (2).jpg',
+    'images/hampta (3).jpg',
+    'images/hampta (4).jpg',
+    'images/hampta (5).jpg',
+
+  
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Manali',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Group Introduction', blurb: 'Get introduced to the trek group.' },
+        { time: 'Night', name: 'Overnight Drive', blurb: 'Drive overnight towards Manali.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Manali → Jobra → Chika',
+      stops: [
+        { time: '7:00 AM', name: 'Reach Manali', blurb: 'Breakfast and freshen up.' },
+        { time: '9:00 AM', name: 'Trek Briefing', blurb: 'Meet the trek team and complete briefing and equipment checks.' },
+        { time: '10:00 AM', name: 'Manali → Jobra', blurb: 'Drive towards the trek starting point.' },
+        { time: '11:30 AM', name: 'Jobra → Chika', blurb: 'Begin the opening trek through pine forests, meadows and mountain streams.' },
+        { time: '2:00 PM', name: 'Chika Campsite', blurb: 'Reach camp, have lunch and set up camp.' },
+        { time: 'Evening', name: 'Acclimatisation Walk', blurb: 'Take a short relaxed walk around the campsite.' },
+        { time: 'Night', name: 'Camp Night', blurb: 'Dinner, stargazing and trek briefing.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Chika → Balu Ka Ghera',
+      stops: [
+        { time: '6:30 AM', name: 'Wake Up', blurb: 'Tea and breakfast before trekking.' },
+        { time: '8:00 AM', name: 'Trek Begins', blurb: 'Enter the higher mountain terrain.' },
+        { time: 'Day', name: 'Forest & Meadows', blurb: 'Experience forests, open meadows, river crossings and mountain walls.' },
+        { time: 'Day', name: 'Seasonal Snow', blurb: 'Encounter snow patches depending on season.' },
+        { time: '3:00–4:00 PM', name: 'Balu Ka Ghera', blurb: 'Reach the crucial acclimatisation campsite before Pass Day.' },
+        { time: 'Night', name: 'Pass Briefing', blurb: 'Dinner and briefing for the Hampta Pass crossing.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Hampta Pass Crossing',
+      stops: [
+        { time: '5:00 AM', name: 'Wake Up', blurb: 'Tea and light breakfast before the big day.' },
+        { time: '6:00 AM', name: 'Pass Climb', blurb: 'Begin the climb towards Hampta Pass.' },
+        { time: '9:30–11:00 AM', name: 'Hampta Pass', blurb: 'Reach the pass area and enjoy panoramic views and the group achievement moment.' },
+        { time: 'Day', name: 'Landscape Transformation', blurb: 'Descend into dramatically different terrain with brown mountains, snow and rocky landscapes.' },
+        { time: '3:00–5:00 PM', name: 'Chatru', blurb: 'Reach the Chatru side and settle into camp.' },
+        { time: 'Night', name: 'Lahaul Stargazing', blurb: 'Enjoy the open Lahaul night sky, weather permitting.' }
+      ]
+    },
+    {
+      label: 'Day 4',
+      title: 'Chatru → Manali → Delhi',
+      stops: [
+        { time: 'Morning', name: 'Chatru', blurb: 'Continue the journey from the Lahaul side.' },
+        { time: 'Day', name: 'Optional Chandratal', blurb: 'Visit Chandratal if the road is open and weather permits.' },
+        { time: 'Afternoon', name: 'Manali', blurb: 'Return towards Manali.' },
+        { time: 'Evening', name: 'Delhi Journey', blurb: 'Begin the return journey towards Delhi.' }
+      ]
+    },
+    {
+      label: 'Day 5',
+      title: 'Delhi Arrival',
+      stops: [
+        { time: 'Morning', name: 'Delhi', blurb: 'Complete the journey back to Delhi.' }
+      ]
+    },
+    {
+      label: 'Package',
+      title: 'Package Includes',
+      stops: [
+        { time: 'Included', name: 'Delhi–Manali–Delhi Transport', blurb: 'Round-trip group transportation.' },
+        { time: 'Included', name: 'Manali–Jobra Transfer', blurb: 'Transfer to the trek starting point.' },
+        { time: 'Included', name: 'Chatru–Manali Transfer', blurb: 'Return transfer from the Lahaul side.' },
+        { time: 'Included', name: '3 Nights Trek Camping', blurb: 'Camping during the trek.' },
+        { time: 'Included', name: 'Camping Equipment', blurb: 'Sleeping bags, mats and tents.' },
+        { time: 'Included', name: 'Trekking Meals', blurb: 'Meals during the trek.' },
+        { time: 'Included', name: 'Trek Leader', blurb: 'Professional trek leader and support staff.' },
+        { time: 'Included', name: 'Hampta Pass Trek', blurb: 'Complete Hampta Pass trekking experience.' }
+      ]
+    }
+  ]
+},
+
+prashar: {
+  tag: '🏔️ Prashar Lake',
+  title: 'Prashar Lake Expedition',
+  subtitle: 'The lake above the clouds — forest trails, Himalayan ridges & mountain camping',
+  hero: 'images/lake (1).jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹6,999/person' },
+    { label: 'Solo Private', value: '₹8,499/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group', value: '₹6,999/person' }
+  ],
+  gallery: [
+    'images/lake (1).jpg',
+    'images/lake (2).jpg','images/lake (3).jpg',
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Baggi / Mandi',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Travel Games', blurb: 'Group introductions and travel games.' },
+        { time: 'Night', name: 'Overnight Drive', blurb: 'Drive towards Mandi.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Baggi → Prashar Lake',
+      stops: [
+        { time: 'Morning', name: 'Reach Baggi', blurb: 'Arrive near the trek starting point.' },
+        { time: 'Morning', name: 'Prashar Lake Trek', blurb: 'Begin the forest trail towards Prashar Lake.' },
+        { time: 'Day', name: 'Himalayan Ridges', blurb: 'Trek through forests and Himalayan ridge landscapes.' },
+        { time: 'Afternoon', name: 'Prashar Lake', blurb: 'Reach the beautiful high-altitude lake.' },
+        { time: 'Evening', name: 'Camp', blurb: 'Settle into the campsite and enjoy the mountain atmosphere.' },
+        { time: 'Night', name: 'CompasPanion Camp Night', blurb: 'Bonfire, games, dinner and stargazing.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Sunrise → Local Village → Mandi Valley',
+      stops: [
+        { time: 'Morning', name: 'Prashar Sunrise', blurb: 'Wake up for the Himalayan sunrise.' },
+        { time: 'Morning', name: 'Breakfast', blurb: 'Enjoy breakfast at camp.' },
+        { time: 'Day', name: 'Local Village', blurb: 'Explore the surrounding village and mountain landscapes.' },
+        { time: 'Afternoon', name: 'Mandi Valley', blurb: 'Descend towards the Mandi Valley.' },
+        { time: 'Evening', name: 'Delhi Journey', blurb: 'Begin the return journey towards Delhi.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Delhi Arrival',
+      stops: [
+        { time: 'Morning', name: 'Delhi', blurb: 'Complete the overnight journey and return to Delhi.' }
+      ]
+    }
+  ]
+},
+
+triund: {
+  tag: '🥾 Triund',
+  title: 'Triund — Above the Clouds',
+  subtitle: 'Forest trails, Himalayan camping, sunrise, waterfalls & Dharamkot cafés',
+  hero: 'images/truind (1).jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹6,999/person' },
+    { label: 'Solo Private', value: '₹8,499/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group of 12', value: '₹6,999/person' }
+  ],
+  gallery: [
+    'images/truind (1).jpg',
+    'images/truind (2).jpg',
+    'images/truind (3).jpg',
+    'images/truind (4).jpg',
+   
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Dharamkot',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Travel Games', blurb: 'Introductions and group games.' },
+        { time: 'Night', name: 'Overnight Drive', blurb: 'Drive towards Dharamshala and McLeod Ganj.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Dharamkot → Triund',
+      stops: [
+        { time: 'Morning', name: 'Dharamkot', blurb: 'Reach Dharamkot and prepare for the trek.' },
+        { time: 'Morning', name: 'Gallu → Triund', blurb: 'Begin the Himalayan forest trail towards Triund.' },
+        { time: 'Day', name: 'Dhauladhar Views', blurb: 'Enjoy panoramic Dhauladhar mountain views during the climb.' },
+        { time: 'Afternoon', name: 'Triund', blurb: 'Reach the mountain ridge campsite.' },
+        { time: '3:00 PM', name: 'Triund Exploration', blurb: 'Explore the ridge and surrounding landscapes.' },
+        { time: '5:30 PM', name: 'Triund Sunset', blurb: 'Watch the sunset from the ridge.' },
+        { time: 'Night', name: 'Camp Night', blurb: 'Dinner, bonfire where permitted and stargazing.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Triund Sunrise → Dharamkot → Bhagsu',
+      stops: [
+        { time: 'Morning', name: 'Triund Sunrise', blurb: 'Wake up above the clouds for sunrise.' },
+        { time: 'Morning', name: 'Descend', blurb: 'Trek back towards Dharamkot.' },
+        { time: '11:30 AM', name: 'Dharamkot', blurb: 'Explore the village and its relaxed cafés.' },
+        { time: 'Afternoon', name: 'Bhagsu Waterfall', blurb: 'Visit Bhagsu Waterfall.' },
+        { time: 'Evening', name: 'Local Cafés', blurb: 'Enjoy a slow café experience before the return journey.' },
+        { time: 'Evening', name: 'Delhi Journey', blurb: 'Begin the journey back towards Delhi.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Delhi Arrival',
+      stops: [
+        { time: 'Morning', name: 'Delhi', blurb: 'Expected Delhi arrival in the morning.' }
+      ]
+    }
+  ]
+},
+
+bijlimahadev: {
+  tag: '⚡ Bijli Mahadev',
+  title: 'Bijli Mahadev — Beyond Kasol',
+  subtitle: 'Ancient temple, cedar forests, waterfalls, villages & Parvati Valley',
+  hero: 'images/bijli (1).jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹6,999/person' },
+    { label: 'Solo Private', value: '₹8,499/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group of 12', value: '₹6,999/person' }
+  ],
+  gallery: [
+    'images/bijli (1).jpg',
+     'images/bijli (2).jpg',
+      'images/bijli (3).jpg',
+       'images/bijli (4).jpg',
+  
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Kullu / Kasol',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Traveller.' },
+        { time: 'Evening', name: 'Travel Games', blurb: 'Group introductions and games.' },
+        { time: 'Night', name: 'Mountain Drive', blurb: 'Begin the overnight journey.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Bijli Mahadev → Kullu Valley',
+      stops: [
+        { time: '7:00 AM', name: 'Arrive in Kullu', blurb: 'Have breakfast and freshen up.' },
+        { time: '8:00 AM', name: 'Chansari', blurb: 'Drive towards the starting point of the Bijli Mahadev trek.' },
+        { time: '9:00 AM', name: 'Bijli Mahadev Trek', blurb: 'Begin the trek through the mountain landscape.' },
+        { time: '11:00 AM', name: 'Bijli Mahadev Temple', blurb: 'Visit the ancient mountain temple.' },
+        { time: 'Afternoon', name: 'Valley Views', blurb: 'Enjoy views towards Kullu Valley, Parvati Valley, Manikaran side and Himalayan ranges.' },
+        { time: 'Evening', name: 'Return', blurb: 'Return towards the accommodation.' },
+        { time: 'Night', name: 'CompasPanion Night', blurb: 'Dinner, music, games, bonfire and stargazing.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Choj → Parvati River → Manikaran',
+      stops: [
+        { time: 'Morning', name: 'Choj Village', blurb: 'Explore traditional houses, forest paths, viewpoints and local cafés.' },
+        { time: 'Morning', name: 'Forest Trail', blurb: 'Take a relaxed village and forest walk.' },
+        { time: '12:00 PM', name: 'Parvati River', blurb: 'Find a safe riverside viewpoint and relax beside the river.' },
+        { time: 'Afternoon', name: 'Manikaran Sahib', blurb: 'Visit Manikaran Sahib and the hot springs area.' },
+        { time: 'Afternoon', name: 'Old Village Streets', blurb: 'Explore the traditional streets around Manikaran.' },
+        { time: 'Evening', name: 'Local Café', blurb: 'Enjoy chai or kahwa with snacks.' },
+        { time: 'Night', name: 'Delhi Journey', blurb: 'Start the overnight return journey.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Back to Delhi',
+      stops: [
+        { time: 'Morning', name: 'Delhi Arrival', blurb: 'Expected arrival around 7–10 AM depending on traffic and road conditions.' }
+      ]
+    }
+  ]
+},
+
+nagtibba: {
+  tag: '🏔️ Nag Tibba',
+  title: 'Nag Tibba — The Weekend Wild',
+  subtitle: 'Forest trails, camping, sunrise & Himalayan mountain views',
+  hero: 'images/nag tibba (1).jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹6,999/person' },
+    { label: 'Solo Private', value: '₹8,499/person' },
+    { label: 'Couple', value: '₹13,499/couple' },
+    { label: 'Group of 12', value: '₹6,999/person' }
+  ],
+  gallery: [
+    'images/nag tibba (1).jpg',
+   'images/nag tibba (2).jpg',
+   'images/nag tibba (3).jpg',
+   'images/nag tibba (4).jpg',
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Pantwari',
+      stops: [
+        { time: '8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Group Introductions', blurb: 'Get introduced to the group.' },
+        { time: 'Night', name: 'Uttarakhand Drive', blurb: 'Begin the overnight journey towards Pantwari.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Pantwari → Nag Tibba Base Camp',
+      stops: [
+        { time: 'Morning', name: 'Pantwari', blurb: 'Arrive at Pantwari and prepare for the trek.' },
+        { time: 'Morning', name: 'Nag Tibba Base Trek', blurb: 'Begin the forest trail towards the base camp.' },
+        { time: 'Day', name: 'Forest Trail', blurb: 'Walk through Himalayan forests and mountain landscapes.' },
+        { time: 'Afternoon', name: 'Base Camp', blurb: 'Reach the campsite and settle in.' },
+        { time: 'Evening', name: 'Mountain Ridges', blurb: 'Enjoy the surrounding ridge views.' },
+        { time: 'Night', name: 'Camp Night', blurb: 'Bonfire, group activities, dinner and stargazing.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Nag Tibba Summit Sunrise',
+      stops: [
+        { time: 'Early Morning', name: 'Summit Trek', blurb: 'Begin the climb towards the Nag Tibba summit.' },
+        { time: '6:30–7:00 AM', name: 'Sunrise', blurb: 'Watch the Himalayas light up from the summit.' },
+        { time: 'Morning', name: 'Himalayan Ranges', blurb: 'On clear days, views include Bandarpoonch, Swargarohini, Gangotri and Kedarnath ranges.' },
+        { time: 'Morning', name: 'Breakfast & Group Photos', blurb: 'Enjoy breakfast or snacks and capture group photographs.' },
+        { time: 'Day', name: 'Descend', blurb: 'Return from the summit towards the base and onward towards the road.' },
+        { time: 'Evening', name: 'Delhi Journey', blurb: 'Begin the return journey.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Back to Delhi',
+      stops: [
+        { time: 'Morning', name: 'Delhi Arrival', blurb: 'Return to Delhi after the weekend expedition.' }
+      ]
+    }
+  ]
+},
+
+
+
+darcha: {
+  tag: '🏔️ Darcha',
+  title: 'Darcha Slow Escape',
+  subtitle: 'No rush. Just Lahaul — remote villages, rivers, mountains & slow mornings',
+  hero: 'images/darcha (1).jpg',
+  meta: [
+    { label: 'Duration', value: '3 Days 2 Nights' },
+    { label: 'Solo Shared', value: '₹8,499' },
+    { label: 'Solo Private', value: '₹10,499' },
+    { label: 'Couple', value: '₹18,499/couple' },
+    { label: 'Group of 12', value: '₹8,499/person' }
+  ],
+  gallery: [
+    'images/darcha (1).jpg',
+     'images/darcha (2).jpg',
+      'images/darcha (3).jpg',
+       'images/darcha (4).jpg',
+   
+  ],
+  days: [
+    {
+      label: 'Day 0',
+      title: 'Delhi → Manali',
+      stops: [
+        { time: '7:00–8:00 PM', name: 'Meet in Delhi', blurb: 'Meet the group and board the Tempo Traveller.' },
+        { time: 'Evening', name: 'Group Introductions', blurb: 'Get introduced to the group.' },
+        { time: 'Night', name: 'Overnight Drive', blurb: 'Begin the journey towards Manali.' }
+      ]
+    },
+    {
+      label: 'Day 1',
+      title: 'Manali → Sissu → Keylong → Jispa → Darcha',
+      stops: [
+        { time: '6:00–7:00 AM', name: 'Manali', blurb: 'Have breakfast and freshen up.' },
+        { time: '8:00 AM', name: 'Manali → Sissu', blurb: 'Drive through the Atal Tunnel into Lahaul.' },
+        { time: '9:30 AM', name: 'Sissu', blurb: 'Explore Sissu village, waterfall viewpoint, Chandra River and mountain viewpoints.' },
+        { time: '12:00 PM', name: 'Sissu → Keylong', blurb: 'Continue towards Keylong through scenic mountain roads.' },
+        { time: '1:30 PM', name: 'Keylong', blurb: 'Have lunch and explore the local market and monastery surroundings.' },
+        { time: '4:00 PM', name: 'Jispa', blurb: 'Relax beside the Bhaga River with chai, photography and a riverside walk.' },
+        { time: '5:30 PM', name: 'Jispa → Darcha', blurb: 'Continue the short drive towards Darcha.' },
+        { time: '7:00 PM', name: 'Darcha Sunset', blurb: 'Walk around the village and surrounding valley.' },
+        { time: '8:00 PM', name: 'CompasPanion Dinner', blurb: 'Enjoy dinner and a relaxed mountain evening.' }
+      ]
+    },
+    {
+      label: 'Day 2',
+      title: 'Darcha — Do Nothing Day',
+      stops: [
+        { time: 'Morning', name: 'Slow Morning', blurb: 'Wake up in Darcha and enjoy a relaxed breakfast.' },
+        { time: '10:00 AM', name: 'Darcha River Walk', blurb: 'Walk beside the river and enjoy the quiet valley.' },
+        { time: 'Morning', name: 'Slow Hour', blurb: 'Spend time without rushing through the itinerary.' },
+        { time: 'Afternoon', name: 'Optional Exploration', blurb: 'Take a short optional exploration around the local area.' },
+        { time: '4:00 PM', name: 'Chai & Sunset', blurb: 'Relax with chai and enjoy the mountain sunset.' },
+        { time: '5:00 PM', name: 'Golden Hour', blurb: 'Capture group photographs.' },
+        { time: '7:00 PM', name: 'Final CompasPanion Night', blurb: 'Dinner, bonfire where permitted, stargazing and group conversations.' }
+      ]
+    },
+    {
+      label: 'Day 3',
+      title: 'Darcha → Jispa → Keylong → Sissu → Manali → Delhi',
+      stops: [
+        { time: '6:30 AM', name: 'Wake Up', blurb: 'Start the return journey with tea and breakfast.' },
+        { time: '8:00 AM', name: 'Drive to Manali', blurb: 'Begin driving back through Lahaul.' },
+        { time: '9:00 AM', name: 'Jispa', blurb: 'Make a short riverside stop.' },
+        { time: '10:30 AM', name: 'Keylong', blurb: 'Tea and snack stop.' },
+        { time: '12:00 PM', name: 'Sissu', blurb: 'Make the final Lahaul stop.' },
+        { time: '2:00 PM', name: 'Atal Tunnel → Manali', blurb: 'Continue towards Manali through the Atal Tunnel.' },
+        { time: '4:00 PM', name: 'Manali', blurb: 'Quick refreshment stop.' },
+        { time: '5:00 PM', name: 'Delhi Journey', blurb: 'Begin the overnight journey towards Delhi.' },
+        { time: 'Morning', name: 'Delhi Arrival', blurb: 'Expected arrival around 5–8 AM depending on traffic and road conditions.' }
+      ]
+    },
+    {
+      label: 'Package',
+      title: 'Package Includes',
+      stops: [
+        { time: 'Included', name: 'Delhi–Darcha–Delhi Transport', blurb: 'Round-trip transportation.' },
+        { time: 'Included', name: '2 Nights Darcha Accommodation', blurb: 'Two nights in Darcha.' },
+        { time: 'Included', name: 'Meals', blurb: 'Two breakfasts, two lunches and two dinners.' },
+        { time: 'Included', name: 'Sissu', blurb: 'Sissu visit and waterfall viewpoint.' },
+        { time: 'Included', name: 'Keylong', blurb: 'Keylong stop and local exploration.' },
+        { time: 'Included', name: 'Jispa', blurb: 'Riverside experience beside the Bhaga River.' },
+        { time: 'Included', name: 'Darcha', blurb: 'Darcha village exploration.' },
+        { time: 'Included', name: 'Coordinator', blurb: 'CompasPanion trip coordination.' }
+      ]
+    },
+    {
+      label: 'Exclusions',
+      title: 'Not Included',
+      stops: [
+        { time: 'Excluded', name: 'Personal Expenses', blurb: 'Personal expenses are excluded.' },
+        { time: 'Excluded', name: 'Café Bills', blurb: 'Café expenses are excluded.' },
+        { time: 'Excluded', name: 'Extra Snacks', blurb: 'Additional snacks are excluded.' },
+        { time: 'Excluded', name: 'Alcohol', blurb: 'Alcohol is not included.' },
+        { time: 'Excluded', name: 'Travel Insurance', blurb: 'Travel insurance is excluded.' },
+        { time: 'Excluded', name: 'Optional Activities', blurb: 'Optional activities are excluded.' }
+      ]
+    }
+  ]
+}
+      
     };
 
     let currentItinDayIndex = 0;
