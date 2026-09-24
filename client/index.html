@@ -749,7 +749,7 @@
       <h2 class="section-title">What Our Explorers Say</h2>
       <p class="section-desc">Real words from real adventurers who let Compasspanion be their guide.</p>
     </div>
-    <div class="testimonials-grid">
+    <div class="testimonials-grid" id="testimonialsGrid">
       <div class="testi-card reveal">
         <div class="quote-mark">"</div>
         <div class="testi-stars">★★★★★</div>
@@ -802,6 +802,48 @@ I had been waiting for my friends to make travel plans, and finally decided to j
           </div>
         </div>
       </div>
+    </div>
+    <div class="feedback-panel reveal">
+      <div class="feedback-copy">
+        <p class="section-eyebrow">Your turn</p>
+        <h3>How was your journey?</h3>
+        <p>Share a few words and help fellow explorers choose their next adventure.</p>
+      </div>
+      <form class="feedback-form" id="feedbackForm" onsubmit="submitFeedback(event)">
+        <div class="feedback-form-row">
+          <label class="feedback-field">
+            <span>Your name</span>
+            <input id="feedbackName" type="text" maxlength="60" placeholder="e.g. Aanya Sharma" required />
+          </label>
+          <label class="feedback-field">
+            <span>Trip or destination <small>(optional)</small></span>
+            <input id="feedbackTrip" type="text" maxlength="80" placeholder="e.g. Spiti Valley" />
+          </label>
+        </div>
+        <fieldset class="rating-field">
+          <legend>Your rating</legend>
+          <div class="rating-input" aria-label="Choose a rating from 1 to 5 stars">
+            <input id="rating-5" type="radio" name="feedbackRating" value="5" required />
+            <label for="rating-5" title="5 stars">★</label>
+            <input id="rating-4" type="radio" name="feedbackRating" value="4" />
+            <label for="rating-4" title="4 stars">★</label>
+            <input id="rating-3" type="radio" name="feedbackRating" value="3" />
+            <label for="rating-3" title="3 stars">★</label>
+            <input id="rating-2" type="radio" name="feedbackRating" value="2" />
+            <label for="rating-2" title="2 stars">★</label>
+            <input id="rating-1" type="radio" name="feedbackRating" value="1" />
+            <label for="rating-1" title="1 star">★</label>
+          </div>
+        </fieldset>
+        <label class="feedback-field">
+          <span>Your feedback</span>
+          <textarea id="feedbackText" maxlength="500" rows="4" placeholder="Tell us about your experience..." required></textarea>
+        </label>
+        <div class="feedback-submit-row">
+          <button class="btn-primary" type="submit">Post Feedback <span>→</span></button>
+          <p class="feedback-status" id="feedbackStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
     </div>
   </section>
 

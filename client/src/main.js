@@ -151,5 +151,56 @@
       });
     }
 
+    /* ===== FEEDBACK ===== */
+    const feedbackStorageKey = 'compasspanion-feedback';
+
+    function escapeFeedbackText(value) {
+      return String(value).replace(/[&<>'"]/g, character => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;'
+      }[character]));
+    }
+
+    function feedbackInitials(name) {
+      return name.split(/\s+/).map(part => part[0]).join('').slice(0, 2).toUpperCase();
+    }
+
+    function renderFeedback() {
+      const container = document.getElementById('testimonialsGrid');
+      if (!container) return;
+
+      let feedback = [];
+      try { feedback = JSON.parse(localStorage.getItem(feedbackStorageKey) || '[]'); } catch (error) { return; }
+
+      container.querySelectorAll('.user-feedback-card').forEach(card => card.remove());
+      const feedbackMarkup = feedback.map(item => {
+        const rating = Math.max(1, Math.min(5, Number(item.rating)));
+        const stars = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+        return `<article class="testi-card user-feedback-card"><div class="quote-mark">"</div><div class="testi-stars">${stars}</div><p class="testi-text">${escapeFeedbackText(item.text)}</p><div class="testi-author"><div class="testi-avatar">${escapeFeedbackText(feedbackInitials(item.name))}</div><div><div class="testi-name">${escapeFeedbackText(item.name)}</div><div class="testi-trip">${escapeFeedbackText(item.trip || 'Compasspanion traveller')}</div></div></div></article>`;
+      }).join('');
+      container.insertAdjacentHTML('afterbegin', feedbackMarkup);
+    }
+
+    function submitFeedback(event) {
+      event.preventDefault();
+      const form = event.target;
+      const name = document.getElementById('feedbackName').value.trim();
+      const trip = document.getElementById('feedbackTrip').value.trim();
+      const text = document.getElementById('feedbackText').value.trim();
+      const rating = form.querySelector('input[name="feedbackRating"]:checked')?.value;
+      const status = document.getElementById('feedbackStatus');
+      if (!name || !text || !rating) return;
+
+      let feedback = [];
+      try { feedback = JSON.parse(localStorage.getItem(feedbackStorageKey) || '[]'); } catch (error) { feedback = []; }
+      feedback.unshift({ name, trip, text, rating, createdAt: new Date().toISOString() });
+      localStorage.setItem(feedbackStorageKey, JSON.stringify(feedback.slice(0, 12)));
+      renderFeedback();
+      form.reset();
+      status.textContent = 'Thanks for sharing your journey.';
+      setTimeout(() => { status.textContent = ''; }, 4000);
+    }
+
+    renderFeedback();
+
 
 
