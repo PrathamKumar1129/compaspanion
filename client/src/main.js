@@ -154,6 +154,46 @@
     /* ===== FEEDBACK ===== */
     const feedbackStorageKey = 'compasspanion-feedback';
 
+    function getLocalFeedback() {
+      try {
+        const stored = JSON.parse(localStorage.getItem(feedbackStorageKey) || '[]');
+        return Array.isArray(stored) ? stored : [];
+      } catch (error) {
+        return [];
+      }
+    }
+
+    function saveLocalFeedback(feedback) {
+      if (feedback.length) localStorage.setItem(feedbackStorageKey, JSON.stringify(feedback));
+      else localStorage.removeItem(feedbackStorageKey);
+    }
+
+    function createFeedbackId() {
+      return window.crypto?.randomUUID?.() || `feedback-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    }
+
+    async function sendFeedback(item) {
+      const response = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(item)
+      });
+      if (!response.ok) throw new Error('Feedback could not be synced');
+    }
+
+    async function syncPendingFeedback() {
+      let pending = getLocalFeedback();
+      while (pending.length) {
+        const item = pending[0];
+        if (!item.id) item.id = createFeedbackId();
+        if (!item.createdAt) item.createdAt = new Date().toISOString();
+        saveLocalFeedback(pending);
+        await sendFeedback(item);
+        pending = getLocalFeedback().filter(saved => saved.id !== item.id);
+        saveLocalFeedback(pending);
+      }
+    }
+
     function escapeFeedbackText(value) {
       return String(value).replace(/[&<>'"]/g, character => ({
         '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;'
@@ -164,12 +204,23 @@
       return name.split(/\s+/).map(part => part[0]).join('').slice(0, 2).toUpperCase();
     }
 
-    function renderFeedback() {
+    async function renderFeedback() {
       const container = document.getElementById('testimonialsGrid');
       if (!container) return;
 
-      let feedback = [];
-      try { feedback = JSON.parse(localStorage.getItem(feedbackStorageKey) || '[]'); } catch (error) { return; }
+      let feedback;
+      try {
+        await syncPendingFeedback();
+      } catch (error) {
+        // Continue loading shared feedback even if an older local item cannot sync yet.
+      }
+      try {
+        const response = await fetch('/api/feedback');
+        if (!response.ok) throw new Error('Feedback could not be loaded');
+        feedback = await response.json();
+      } catch (error) {
+        feedback = getLocalFeedback();
+      }
 
       container.querySelectorAll('.user-feedback-card').forEach(card => card.remove());
       const feedbackMarkup = feedback.map(item => {
@@ -180,7 +231,7 @@
       container.insertAdjacentHTML('afterbegin', feedbackMarkup);
     }
 
-    function submitFeedback(event) {
+    async function submitFeedback(event) {
       event.preventDefault();
       const form = event.target;
       const name = document.getElementById('feedbackName').value.trim();
@@ -190,13 +241,21 @@
       const status = document.getElementById('feedbackStatus');
       if (!name || !text || !rating) return;
 
-      let feedback = [];
-      try { feedback = JSON.parse(localStorage.getItem(feedbackStorageKey) || '[]'); } catch (error) { feedback = []; }
-      feedback.unshift({ name, trip, text, rating, createdAt: new Date().toISOString() });
-      localStorage.setItem(feedbackStorageKey, JSON.stringify(feedback.slice(0, 12)));
-      renderFeedback();
-      form.reset();
-      status.textContent = 'Thanks for sharing your journey.';
+      const item = { id: createFeedbackId(), name, trip, text, rating: Number(rating), createdAt: new Date().toISOString() };
+      const pending = getLocalFeedback();
+      pending.unshift(item);
+      saveLocalFeedback(pending);
+      status.textContent = 'Posting your feedback…';
+      try {
+        await sendFeedback(item);
+        saveLocalFeedback(getLocalFeedback().filter(saved => saved.id !== item.id));
+        form.reset();
+        await renderFeedback();
+        status.textContent = 'Thanks for sharing your journey.';
+      } catch (error) {
+        await renderFeedback();
+        status.textContent = 'Saved on this device; it will sync when the connection is available.';
+      }
       setTimeout(() => { status.textContent = ''; }, 4000);
     }
 

@@ -1,9 +1,10 @@
 const fs = require('fs');
-const { bookingsFile, bookingsCsvFile, newsletterFile, readJson } = require('../services/storage');
+const { bookingsFile, bookingsCsvFile, newsletterFile, feedbackFile, readJson } = require('../services/storage');
 const { list, testConnection } = require('../services/supabase');
 const { storageMode, useDatabase, useFiles } = require('../config');
 const { createBooking } = require('../controllers/bookingController');
 const { createSubscriber } = require('../controllers/newsletterController');
+const { createFeedback } = require('../controllers/feedbackController');
 
 function registerApi(req, res, url, sendJson) {
   if (req.method === 'GET' && url.pathname === '/api/health') {
@@ -42,6 +43,22 @@ function registerApi(req, res, url, sendJson) {
   }
   if (req.method === 'POST' && url.pathname === '/api/newsletter') {
     createSubscriber(req, res, sendJson); return true;
+  }
+  if (req.method === 'GET' && url.pathname === '/api/feedback') {
+    if (useDatabase) {
+      list('feedback')
+        .then(rows => sendJson(res, 200, rows.map(row => ({
+          id: row.id, name: row.name, trip: row.trip, rating: row.rating,
+          text: row.message, createdAt: row.created_at
+        }))))
+        .catch(() => sendJson(res, 500, { error: 'Could not read feedback from database' }));
+    } else {
+      sendJson(res, 200, readJson(feedbackFile));
+    }
+    return true;
+  }
+  if (req.method === 'POST' && url.pathname === '/api/feedback') {
+    createFeedback(req, res, sendJson); return true;
   }
   return false;
 }

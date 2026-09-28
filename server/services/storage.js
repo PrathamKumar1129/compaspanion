@@ -5,6 +5,7 @@ const dataDir = path.join(__dirname, '..', 'data');
 const bookingsFile = path.join(dataDir, 'bookings.json');
 const bookingsCsvFile = path.join(dataDir, 'bookings.csv');
 const newsletterFile = path.join(dataDir, 'newsletter.json');
+const feedbackFile = path.join(dataDir, 'feedback.json');
 
 function ensureDataFiles(enabled = true) {
   if (!enabled) return;
@@ -14,6 +15,7 @@ function ensureDataFiles(enabled = true) {
     fs.writeFileSync(bookingsCsvFile, 'id,timestamp,destinations,startDate,endDate,adults,children,budget,tripType,specialReq,name,email,phone,contactTime\\n');
   }
   if (!fs.existsSync(newsletterFile)) fs.writeFileSync(newsletterFile, '[]\\n');
+  if (!fs.existsSync(feedbackFile)) fs.writeFileSync(feedbackFile, '[]\\n');
 }
 
 function readJson(filePath) {
@@ -37,4 +39,4 @@ function appendBookingCsv(record) {
   fs.appendFileSync(bookingsCsvFile, values.join(',') + '\\n');
 }
 
-module.exports = { bookingsFile, bookingsCsvFile, newsletterFile, ensureDataFiles, readJson, writeJson, appendBookingCsv };
+module.exports = { bookingsFile, bookingsCsvFile, newsletterFile, feedbackFile, ensureDataFiles, readJson, writeJson, appendBookingCsv };

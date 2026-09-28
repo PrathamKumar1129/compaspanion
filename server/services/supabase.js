@@ -27,6 +27,15 @@ async function insert(tableName, payload) {
       [payload.id, payload.email, payload.created_at]
     );
   }
+  if (tableName === 'feedback') {
+    return pool.query(
+      `INSERT INTO feedback (id, name, trip, rating, message, created_at)
+       VALUES ($1, $2, $3, $4, $5, $6)
+       ON CONFLICT (id) DO NOTHING
+       RETURNING *`,
+      [payload.id, payload.name, payload.trip, payload.rating, payload.message, payload.created_at]
+    );
+  }
   throw new Error('Unsupported database table: ' + tableName);
 }
 
@@ -37,7 +46,7 @@ async function testConnection() {
 }
 
 async function list(tableName) {
-  if (!['bookings', 'newsletter'].includes(tableName)) {
+  if (!['bookings', 'newsletter', 'feedback'].includes(tableName)) {
     throw new Error('Unsupported database table: ' + tableName);
   }
   const result = await pool.query(`SELECT * FROM ${tableName} ORDER BY created_at DESC`);
