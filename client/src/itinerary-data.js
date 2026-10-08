@@ -651,10 +651,10 @@ nepal: {
   hero: 'images/nepal (1).jpg',
   meta: [
     { label: 'Duration', value: '7 Days 6 Nights' },
-    { label: 'Solo Shared', value: '₹27,999' },
+    { label: 'Solo Shared', value: '₹25,999' },
     { label: 'Solo Private', value: '₹31,999' },
-    { label: 'Couple', value: '₹49,999/couple' },
-    { label: 'Group of 12', value: '₹24,999/person' }
+    { label: 'Couple', value: '₹59,999/couple' },
+    { label: 'Group of 12', value: '₹25,999/person' }
   ],
   gallery: [
     'images/nepal (5).jpg',
@@ -789,9 +789,9 @@ uppermustang: {
   hero: 'images/mustang.jpg',
   meta: [
     { label: 'Duration', value: '13 Days 12 Nights' },
-    { label: 'Solo', value: '₹1,34,999' },
-    { label: 'Couple', value: '₹2,49,999/couple' },
-    { label: 'Group of 12', value: '₹1,24,999/person' }
+    { label: 'Solo', value: '₹1,19,999' },
+    { label: 'Couple', value: '₹2,19,999/couple' },
+    { label: 'Group of 12', value: '₹1,09,999/person' }
   ],
   gallery: [
     'images/mustang.jpg',
